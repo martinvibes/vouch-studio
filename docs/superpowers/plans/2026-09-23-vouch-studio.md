@@ -16,7 +16,7 @@
 - The Livepeer endpoint is `https://agent.livepeer.org/api/mcp`. The bearer comes from `LIVEPEER_API_KEY` and is optional (keyless demo). It is never exposed to the client.
 - Every billed `run_capability` passes `session_id: "vouch_<shootoutId>"`.
 - Never re-submit a render after a client timeout. Poll `get_create_media` instead.
-- The scoring constants are exactly as in the spec: quality 0.60/0.25/0.15, vouch 0.70/0.20/0.10. Floors: image $0.003 and 2 000 ms, video $0.05 and 25 000 ms. Fidelity cap: below 50 means max 51. Grades: S92, A80, B66, C52, D38.
+- The scoring constants are exactly as in the spec: quality 0.60/0.25/0.15, vouch 0.70/0.20/0.10. Floors: image $0.003 and 8 000 ms, video $0.05 and 40 000 ms (wall-clock). Fidelity cap: below 50 means max 58. Grades: S92, A80, B66, C52, D38.
 - The judge prompt never contains the model name.
 - No secrets in git. Seed data and mirrored media are committed; runtime data goes to `DATA_DIR` (git-ignored).
 
@@ -84,8 +84,8 @@ uploadBase64(data: Buffer, mime: string): Promise<string>  // hosted https url
 **Produces:** `scoreEntry({kind, judge, requirements, costUsd, renderMs, failed}): ScoreBreakdown`, `toGrade(n)`, `CONTENDERS`, `contender(id)`, `inputsFor(c)`
 
 - [ ] Tests:
-  - all yes, craft 9, aesthetics 9, $0.003, 2 s → quality 97.5 → vouch = 0.7·97.5 + 0.2·100 + 0.1·100 = 98.25 → S
-  - fidelity 40 is capped at 51 (C), with the cap reason recorded
+  - all yes, craft 9, aesthetics 9, $0.003, 2 s → quality 96 → vouch = 0.7·96 + 0.2·100 + 0.1·100 = 97.2 → S
+  - fidelity 40 is capped at 58 (C), with the cap reason recorded
   - a failed render gives 0 (F)
   - value at 10× floor = 60
   - the grade thresholds hold at their edges

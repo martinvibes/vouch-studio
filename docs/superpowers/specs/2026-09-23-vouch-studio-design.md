@@ -44,11 +44,11 @@ You write one brief. Several Livepeer models render it side by side. A blind jud
 - `craft` = judge craft × 10; `aesthetics` = judge aesthetics × 10
 - `quality` = 0.60 · fidelity + 0.25 · craft + 0.15 · aesthetics
 - `value` = clamp(100 − 40 · log10(cost / floor)), where floor = $0.003 for images and $0.05 for video
-- `speed` = clamp(100 − 45 · log10(renderMs / floorMs)), where floorMs = 2 000 for images and 25 000 for video
+- `speed` = clamp(100 − 45 · log10(renderMs / floorMs)), where floorMs = 8 000 for images and 40 000 for video (wall-clock, MCP round trip included)
 - `vouch` = 0.70 · quality + 0.20 · value + 0.10 · speed
 
 Caps (an entry cannot be "cheap and wrong" and still grade well):
-- fidelity < 50 → max 51 (C). Reason: "misses the brief".
+- fidelity < 50 → max 58 (C). Reason: "misses the brief".
 - failed render → 0 (F).
 
 Grades: S ≥ 92, A ≥ 80, B ≥ 66, C ≥ 52, D ≥ 38, F < 38. **Seal:** the shootout winner with grade A or better.
