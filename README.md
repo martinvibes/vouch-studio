@@ -16,7 +16,7 @@ The Livepeer network exposes dozens of image and video models behind one API. Ch
 
 1. **Plan.** The brief is classified (product, portrait, typography…) and the router proposes a lineup from the Board: the top model for that kind of shot, the best value above 70 quality, and a challenger that has been tested least. Each card shows the live Livepeer price and network SLA. You can swap any contender.
 2. **Checklist.** `gemini-text` turns the brief into 4–8 requirements a viewer could verify by looking: counts, colours, placement, exact quoted text.
-3. **Render.** All contenders run in parallel through Livepeer's `run_capability`, each by its exact capability name. Slow video jobs are polled with `get_create_media`. Nothing is ever re-submitted, because a re-run bills twice.
+3. **Render.** All contenders run in parallel through Livepeer's `run_capability`, each by its exact capability name. Slow video jobs are polled with `get_create_media`. A render that started is never re-submitted, because a re-run bills twice; the one retry is a job the network says never reached a runner.
 4. **Judge.** `nemotron-omni-vision` grades each render blind: yes, partly or no per requirement with evidence, plus craft and aesthetics scores and a list of flaws. Two independent passes are merged. Video is judged from a 3-frame contact sheet (15/50/85%) cut with ffmpeg and uploaded to Livepeer.
 5. **Score.** Quality = 60% brief match + 25% craft + 15% aesthetics. Vouch score = 70% quality + 20% value + 10% speed, with value and speed on log scales. A render below 50 on brief match is capped at a C, however cheap or fast it was.
 6. **Decide and refine.** The judge picks a winner (the Vouch seal goes to one scoring 80 or more). You can overrule it; the Board reports how often people agree with the judge. "Refine this render" turns your feedback into new requirements and a rewritten prompt, then runs the next round on the same model and shows the score change.
@@ -55,8 +55,8 @@ Also: `POST /api/preflight`, `POST /api/shootouts/:id/refine`, `POST /api/shooto
 pnpm install
 cp .env.example .env.local   # LIVEPEER_API_KEY is optional; keyless uses Livepeer's demo credits
 pnpm dev                     # http://localhost:3000
-pnpm test                    # 50 unit tests, including the full orchestration against fakes
-pnpm benchmark               # re-run the seed benchmark (real renders, about $6)
+pnpm test                    # 52 unit tests, including the full orchestration against fakes
+pnpm benchmark               # re-run the seed benchmark (real renders, about $7)
 ```
 
 | Variable | Default | Purpose |
