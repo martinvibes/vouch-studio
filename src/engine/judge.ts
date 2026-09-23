@@ -23,7 +23,7 @@ export function judgePrompt(brief: string, requirements: Requirement[], kind: Me
     ...requirements.map((r) => `${r.id}. ${r.text}`),
     "",
     'For EACH requirement answer "yes" (clearly satisfied), "partial" (present but wrong, weak or ambiguous) or "no" (absent or contradicted). Be strict: if you cannot clearly see it, it is not "yes". Quoted text must be spelled exactly to be "yes".',
-    `craft 0-10: technical execution: anatomy, hands, faces, object geometry, text rendering, artifacts, blur${kind === "video" ? ", and consistency of subjects across the frames" : ""}. 10 flawless · 7 minor flaws · 4 obvious flaws · 1 broken.`,
+    `craft 0-10: technical execution: anatomy, hands, faces, object geometry, text rendering, artifacts, blur${kind === "video" ? ", and consistency of subjects across the frames" : ""}. 10 flawless · 7 minor flaws · 4 obvious flaws · 1 broken. Scan the whole frame, not just the subject: garbled or pseudo-text on background signs and labels, stray glyphs, melted objects and extra limbs all count against craft.`,
     "aesthetics 0-10: composition, lighting, colour, polish. 10 portfolio-grade · 7 good stock photo · 4 amateur · 1 unusable.",
     "Calibrate: most AI renders have at least one flaw. Reserve 9-10 for work you could not fault on close inspection; a competent render with any visible issue is 6-8.",
     "defects: up to 4 specific visible flaws ([] only if you truly find none). verdict: one sentence.",
