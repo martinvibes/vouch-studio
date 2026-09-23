@@ -1,0 +1,26 @@
+{
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"text\": \"```json\\n{\\\"ok\\\": true}\\n```\",\n  \"model_id\": \"fal-ai/any-llm\"\n}"
+      }
+    ],
+    "structuredContent": {
+      "ok": true,
+      "capability": "gemini-text",
+      "output_kind": "text",
+      "result": {
+        "text": "```json\n{\"ok\": true}\n```",
+        "model_id": "fal-ai/any-llm"
+      },
+      "cost_usd_estimated": 0.0001,
+      "cost_unit_kind": "1000_tokens",
+      "cost_units": 1,
+      "prompt": "Reply with JSON only: {\"ok\":true}",
+      "requested_capability": "gemini-text"
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": "ul1v871mnre"
+}

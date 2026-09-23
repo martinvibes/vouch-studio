@@ -1,0 +1,22 @@
+{
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "run_capability(definitely-not-a-model): \"definitely-not-a-model\" is not a registered capability. — Call list_capabilities and pass an exact name. run_capability never substitutes a model.\nNot billed — refused before anything was dispatched, so no provider was asked and nothing counts against your daily cap."
+      }
+    ],
+    "structuredContent": {
+      "ok": false,
+      "capability": "definitely-not-a-model",
+      "error": "\"definitely-not-a-model\" is not a registered capability.",
+      "code": "capability_unknown",
+      "retryable": false,
+      "billing_note": "not_billed_pre_dispatch",
+      "requested_capability": "definitely-not-a-model"
+    },
+    "isError": true
+  },
+  "jsonrpc": "2.0",
+  "id": "3r4ge1e2jqh"
+}

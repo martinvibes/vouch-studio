@@ -1,0 +1,30 @@
+{
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "⏳ Job mjob_b102f37ffe0b is NOT done — poll get_create_media({ job_id: \"mjob_b102f37ffe0b\" }) until status=done to get the media URL.\nRunning pixverse-t2v (~38s, p95 ~60s). Estimated cost $0.3413. Poll every 8–15s; the render keeps going on the server between polls, but don't resubmit this same request — that would run (and bill) it twice. Tell the user it is running and check back on job mjob_b102f37ffe0b."
+      }
+    ],
+    "structuredContent": {
+      "ok": true,
+      "status": "submitted",
+      "job_id": "mjob_b102f37ffe0b",
+      "capability": "pixverse-t2v",
+      "output_kind": "video",
+      "poll_with": "get_create_media",
+      "eta_seconds": 38,
+      "eta_p95_seconds": 60,
+      "cost_usd_estimated": 0.3413,
+      "cost_unit_kind": "second",
+      "cost_units": 5,
+      "prompt": "A ceramic coffee mug on a walnut desk, steam rising, slow push-in, morning window light",
+      "inputs": {
+        "duration": 5
+      },
+      "requested_capability": "pixverse-t2v"
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": "rpt4bww1yw"
+}

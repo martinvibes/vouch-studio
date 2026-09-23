@@ -1,0 +1,36 @@
+{
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"text\": \"{\\\"text\\\":\\\"OPEN LATE\\\"}\",\n  \"model_id\": \"nvidia/nemotron-3-nano-omni/vision\",\n  \"usage\": {\n    \"input_tokens\": 802,\n    \"output_tokens\": 10\n  }\n}"
+      }
+    ],
+    "structuredContent": {
+      "ok": true,
+      "capability": "nemotron-omni-vision",
+      "output_kind": "text",
+      "result": {
+        "text": "{\"text\":\"OPEN LATE\"}",
+        "model_id": "nvidia/nemotron-3-nano-omni/vision",
+        "usage": {
+          "input_tokens": 802,
+          "output_tokens": 10
+        }
+      },
+      "cost_usd_estimated": 0.0128,
+      "cost_unit_kind": "1000_tokens",
+      "cost_units": 2.024,
+      "cost_paid_usd": 0.0051,
+      "billable_units": 812,
+      "billable_units_source": "fal.usage.tokens",
+      "prompt": "What text is on the sign? Reply as JSON {\"text\":\"...\"}",
+      "inputs": {
+        "image_url": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjkzYzgvZ0lObXJHRHRyRjJoaGNBQjFSdVBFLmpwZw.3c4ffacc484088b8/gINmrGDtrF2hhcAB1RuPE.jpg"
+      },
+      "requested_capability": "nemotron-omni-vision"
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": "71d6606gm7r"
+}

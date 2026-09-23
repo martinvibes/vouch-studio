@@ -1,0 +1,23 @@
+{
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "flux-schnell → https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjkzYzgvZ0lObXJHRHRyRjJoaGNBQjFSdVBFLmpwZw.3c4ffacc484088b8/gINmrGDtrF2hhcAB1RuPE.jpg"
+      }
+    ],
+    "structuredContent": {
+      "ok": true,
+      "capability": "flux-schnell",
+      "output_kind": "image",
+      "url": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjkzYzgvZ0lObXJHRHRyRjJoaGNBQjFSdVBFLmpwZw.3c4ffacc484088b8/gINmrGDtrF2hhcAB1RuPE.jpg",
+      "cost_usd_estimated": 0.0032,
+      "cost_unit_kind": "megapixel",
+      "cost_units": 1,
+      "prompt": "A neon sign in a rainy alley that reads OPEN LATE in pink letters",
+      "requested_capability": "flux-schnell"
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": "a64jvg35wkl"
+}

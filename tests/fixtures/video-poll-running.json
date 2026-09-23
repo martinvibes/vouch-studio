@@ -1,0 +1,57 @@
+{
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Media job mjob_b102f37ffe0b: running (8s)\nCapability: pixverse-t2v\nAction: run_capability\nRunner: host agent.livepeer.org · entered\nSubmitted via: run_capability\nStatus: inference in flight. Re-poll in 8–15s.\nCost: $0.3413 (5 second)"
+      }
+    ],
+    "structuredContent": {
+      "submitted_via": "run_capability",
+      "job_id": "mjob_b102f37ffe0b",
+      "sdk_job_id": "inf_17bdc361c8275f784a07",
+      "status": "running",
+      "phase": {
+        "phase": "running",
+        "terminal": false,
+        "blocked": null,
+        "label": "Still rendering…",
+        "done": 0,
+        "total": 0
+      },
+      "action": null,
+      "capability": "pixverse-t2v",
+      "capability_used": null,
+      "requested_capability": null,
+      "model_note": null,
+      "prompt": "A ceramic coffee mug on a walnut desk, steam rising, slow push-in, morning window light",
+      "prompt_modified": null,
+      "url": null,
+      "persisted": false,
+      "source_upstream_url": null,
+      "warnings": [],
+      "run_output": null,
+      "output_kind": "video",
+      "seed": null,
+      "draft_cache_url": null,
+      "elapsed_ms": null,
+      "error": null,
+      "error_code": null,
+      "error_retryable": null,
+      "error_billing_note": null,
+      "cancelled_at": null,
+      "billing_note": null,
+      "cost_disposition": "reserved",
+      "spend_release": null,
+      "fallback_fired": null,
+      "created_at": 1790166501571,
+      "updated_at": 1790166502670,
+      "cost_usd_estimated": 0.3413,
+      "cost_unit_kind": "second",
+      "cost_units": 5,
+      "cost_paid_usd": null
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": "802kplafb5n"
+}

@@ -1,0 +1,68 @@
+{
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Media job mjob_b102f37ffe0b: done (67s)\nCapability: pixverse-t2v\nAction: run_capability\nRunner: host agent.livepeer.org · entered\nSubmitted via: run_capability\nURL: https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjkzY2UvT2xyNFFCdHNyc3FXM0VxUUtCUUxYX291dHB1dC5tcDQ.3058e69ee91d2882/Olr4QBtsrsqW3EqQKBQLX_output.mp4\nInference time: 65404ms\nCost: $0.3413 (5 second)"
+      }
+    ],
+    "structuredContent": {
+      "submitted_via": "run_capability",
+      "job_id": "mjob_b102f37ffe0b",
+      "sdk_job_id": "inf_17bdc361c8275f784a07",
+      "status": "done",
+      "phase": {
+        "phase": "done",
+        "terminal": true,
+        "blocked": null,
+        "label": "Ready — your media is finished",
+        "done": 0,
+        "total": 0
+      },
+      "action": null,
+      "capability": "pixverse-t2v",
+      "capability_used": null,
+      "requested_capability": null,
+      "model_note": null,
+      "prompt": "A ceramic coffee mug on a walnut desk, steam rising, slow push-in, morning window light",
+      "prompt_modified": null,
+      "url": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjkzY2UvT2xyNFFCdHNyc3FXM0VxUUtCUUxYX291dHB1dC5tcDQ.3058e69ee91d2882/Olr4QBtsrsqW3EqQKBQLX_output.mp4",
+      "persisted": false,
+      "source_upstream_url": null,
+      "warnings": [],
+      "run_output": null,
+      "output_kind": "video",
+      "seed": null,
+      "draft_cache_url": null,
+      "elapsed_ms": 65404,
+      "error": null,
+      "error_code": null,
+      "error_retryable": null,
+      "error_billing_note": null,
+      "cancelled_at": null,
+      "billing_note": null,
+      "cost_disposition": "spent",
+      "spend_release": null,
+      "fallback_fired": null,
+      "created_at": 1790166501571,
+      "updated_at": 1790166568919,
+      "cost_usd_estimated": 0.3413,
+      "cost_unit_kind": "second",
+      "cost_units": 5,
+      "cost_paid_usd": null,
+      "next_actions": [
+        {
+          "label": "Save a permanent copy of this asset",
+          "short": "Save a copy",
+          "tool": "upload",
+          "args": {
+            "source_url": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjkzY2UvT2xyNFFCdHNyc3FXM0VxUUtCUUxYX291dHB1dC5tcDQ.3058e69ee91d2882/Olr4QBtsrsqW3EqQKBQLX_output.mp4"
+          },
+          "hint": "The URL above inherits the provider's lifetime; this re-hosts the file on durable storage."
+        }
+      ]
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": "e8zls1vjv5j"
+}
