@@ -61,6 +61,8 @@ export type Entry = {
   startedAt?: number;
   renderMs?: number;
   outputUrl?: string;
+  /** Where the network hosted it, when outputUrl points at a local mirror. */
+  originalUrl?: string;
   renderCostUsd?: number;
   judge?: JudgeResult;
   score?: ScoreBreakdown;

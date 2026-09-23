@@ -9,6 +9,8 @@ export async function POST(req: Request, { params }: { params: Promise<{ id: str
   try {
     const { id } = await params;
     const body = await readJson(req);
+    const feedback = typeof body.feedback === "string" ? body.feedback.trim() : "";
+    if (feedback.length < 3 || feedback.length > 400) return json({ error: "Feedback should be 3 to 400 characters." }, 400);
     checkRate(clientIp(req));
     const child = await createRefine({ parentId: id, entryId: body.entryId, feedback: body.feedback });
     startShootout(child.id);

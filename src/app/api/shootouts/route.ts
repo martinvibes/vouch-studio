@@ -1,5 +1,5 @@
 import { checkRate } from "@/engine/guards";
-import { createShootout, startShootout } from "@/engine/shootout";
+import { createShootout, startShootout, validateBrief, validateModels } from "@/engine/shootout";
 import { clientIp, fail, json, readJson } from "@/lib/http";
 import { store } from "@/store";
 
@@ -9,7 +9,9 @@ export const dynamic = "force-dynamic";
 export async function POST(req: Request) {
   try {
     const body = await readJson(req);
-    checkRate(clientIp(req));
+    validateBrief(body.brief);
+    validateModels(body.kind === "video" ? "video" : "image", body.models);
+    checkRate(clientIp(req)); // only well-formed requests count against the quota
     const s = await createShootout({ brief: body.brief, kind: body.kind, models: body.models });
     startShootout(s.id);
     return json({ id: s.id }, 201);

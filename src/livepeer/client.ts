@@ -51,6 +51,17 @@ export type CapabilitySla = {
   available: boolean;
 };
 
+type RunArgs = {
+  capability: string;
+  prompt?: string;
+  inputs?: Record<string, unknown>;
+  sourceUrl?: string;
+  timeoutS: number;
+  sessionId: string;
+  async?: boolean;
+};
+
+const NEVER_STARTED = /did not start within|no entered_at heartbeat/i;
 const POLL_MS = 5000;
 const TERMINAL_FAIL = new Set(["failed", "error", "cancelled", "canceled"]);
 const TERMINAL_OK = new Set(["done", "completed", "complete", "succeeded", "success", "ready"]);
@@ -96,15 +107,18 @@ export class LivepeerClient {
    * `get_create_media` until it lands. We never re-submit on a stalled poll —
    * the provider would bill the second render too.
    */
-  async runCapability(args: {
-    capability: string;
-    prompt?: string;
-    inputs?: Record<string, unknown>;
-    sourceUrl?: string;
-    timeoutS: number;
-    sessionId: string;
-    async?: boolean;
-  }): Promise<RunResult> {
+  async runCapability(args: RunArgs): Promise<RunResult> {
+    try {
+      return await this.runOnce(args);
+    } catch (err) {
+      // The job was accepted but never dispatched to a runner, so nothing
+      // rendered or billed. The network asks for a re-run; do it once.
+      if (err instanceof Error && NEVER_STARTED.test(err.message)) return this.runOnce(args);
+      throw err;
+    }
+  }
+
+  private async runOnce(args: RunArgs): Promise<RunResult> {
     const submit = () =>
       this.callTool(
         "run_capability",
