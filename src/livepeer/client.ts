@@ -105,19 +105,38 @@ export class LivepeerClient {
     sessionId: string;
     async?: boolean;
   }): Promise<RunResult> {
-    const submitted = await this.callTool(
-      "run_capability",
-      {
-        capability: args.capability,
-        ...(args.prompt ? { prompt: args.prompt } : {}),
-        ...(args.inputs ? { inputs: args.inputs } : {}),
-        ...(args.sourceUrl ? { source_url: args.sourceUrl } : {}),
-        timeout: args.timeoutS,
-        session_id: args.sessionId,
-        ...(args.async !== undefined ? { async: args.async } : {}),
-      },
-      (args.async ? 60 : args.timeoutS + 30) * 1000,
-    );
+    const submit = () =>
+      this.callTool(
+        "run_capability",
+        {
+          capability: args.capability,
+          ...(args.prompt ? { prompt: args.prompt } : {}),
+          ...(args.inputs ? { inputs: args.inputs } : {}),
+          ...(args.sourceUrl ? { source_url: args.sourceUrl } : {}),
+          timeout: args.timeoutS,
+          session_id: args.sessionId,
+          ...(args.async !== undefined ? { async: args.async } : {}),
+        },
+        (args.async ? 60 : args.timeoutS + 30) * 1000,
+      );
+
+    // Retry only what the network itself flags as retryable (e.g. a transient
+    // SDK fetch failure before dispatch). A client-side timeout is NOT retried:
+    // the provider may still finish and bill that render.
+    let submitted: unknown;
+    for (let attempt = 0; ; attempt++) {
+      try {
+        submitted = await submit();
+        break;
+      } catch (err) {
+        // Pre-dispatch refusals like "budget store unavailable — try again
+        // shortly" arrive with retryable:false but are safe to retry.
+        const transient = err instanceof Error && /try again|temporarily|unavailable|fetch failed/i.test(err.message);
+        const retryable = err instanceof LivepeerError && err.code !== "http" && (err.retryable || transient);
+        if (!retryable || attempt >= 2) throw err;
+        await sleep(1500 * (attempt + 1));
+      }
+    }
 
     const jobId = extractJobId(submitted);
     const inlineUrl = extractUrl(submitted);

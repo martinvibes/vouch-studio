@@ -35,6 +35,8 @@ export type JudgeResult = {
   /** For video: the contact sheet the judge actually looked at. */
   judgedUrl?: string;
   costUsd?: number;
+  /** How many independent blind passes were merged into this verdict. */
+  passes?: number;
 };
 
 export type ScoreBreakdown = {

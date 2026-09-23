@@ -1,0 +1,16 @@
+import { contactSheetBytes, contactSheetUrl } from "../src/engine/frames";
+import { buildChecklist } from "../src/engine/checklist";
+import { judgeRender } from "../src/engine/judge";
+import { scoreEntry } from "../src/engine/score";
+import { writeFileSync } from "node:fs";
+const url = process.argv[2];
+const brief = "A ceramic coffee mug on a walnut desk, steam rising, slow push-in, morning window light";
+const t0 = Date.now();
+writeFileSync(process.argv[3], await contactSheetBytes(url));
+const sheet = await contactSheetUrl(url, "probe");
+console.log("sheet", Date.now() - t0, "ms", sheet);
+const cl = await buildChecklist(brief, "video", "vouch_probe_video");
+console.log(cl.category, cl.requirements.map((r) => `${r.id}:${r.text}`).join(" | "));
+const j = await judgeRender({ imageUrl: sheet, brief, requirements: cl.requirements, kind: "video", sessionId: "vouch_probe_video" });
+const s = scoreEntry({ kind: "video", requirements: cl.requirements, judge: j, costUsd: 0.3413, renderMs: 69000 });
+console.log(`passes ${j.passes} fid ${s.fidelity} craft ${j.craft} aes ${j.aesthetics} → ${s.total} ${s.grade} | ${j.checks.map((c) => c.id + ":" + c.verdict + (c.note ? "(" + c.note + ")" : "")).join(" ")} | ${j.defects.join("; ")} | $${j.costUsd}`);
