@@ -1,0 +1,271 @@
+{
+  "id": "02d67d01d628",
+  "createdAt": 1790187695117,
+  "updatedAt": 1790188138733,
+  "brief": "A frosted glass perfume bottle on wet black slate, a single white orchid to its left, a thin gold cap, softbox rim light, studio product shot",
+  "kind": "image",
+  "category": "product",
+  "requirements": [
+    {
+      "id": "r1",
+      "text": "A perfume bottle is present."
+    },
+    {
+      "id": "r2",
+      "text": "The perfume bottle is made of frosted glass."
+    },
+    {
+      "id": "r3",
+      "text": "The perfume bottle has a gold cap."
+    },
+    {
+      "id": "r4",
+      "text": "The cap is thin."
+    },
+    {
+      "id": "r5",
+      "text": "The bottle is on black slate."
+    },
+    {
+      "id": "r6",
+      "text": "The slate is wet."
+    },
+    {
+      "id": "r7",
+      "text": "A single white orchid is present."
+    },
+    {
+      "id": "r8",
+      "text": "The orchid is to the bottle's left."
+    }
+  ],
+  "entries": [
+    {
+      "id": "e1",
+      "model": "seedream-5-lite",
+      "prompt": "A frosted glass perfume bottle on wet black slate, a single white orchid to its left, a thin gold cap, softbox rim light, studio product shot",
+      "status": "done",
+      "startedAt": 1790187698919,
+      "renderMs": 34589,
+      "outputUrl": "/seed-media/02d67d01d628-e1.jpg",
+      "renderCostUsd": 0.0368,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "A clear perfume bottle is present in the center of the frame."
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "The bottle has a frosted glass appearance with a matte, opaque texture."
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "The cap is clearly gold and thin, matching the description."
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "The gold cap is thin and cylindrical, fitting the requirement."
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "The bottle is resting on a black slate surface."
+          },
+          {
+            "id": "r6",
+            "verdict": "yes",
+            "note": "The slate is visibly wet with water droplets and reflections."
+          },
+          {
+            "id": "r7",
+            "verdict": "yes",
+            "note": "A single white orchid is present to the left of the bottle."
+          },
+          {
+            "id": "r8",
+            "verdict": "yes",
+            "note": "The orchid is positioned to the left of the bottle as required."
+          }
+        ],
+        "craft": 9,
+        "aesthetics": 9,
+        "defects": [],
+        "verdict": "Flawless studio product shot with perfect alignment to brief.",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTUvN2pSTDk5TzVyaXFHUjgxTkhMeUJOX2E1MTQxN2JhZmI4NjRiZTc5M2I1MmRkM2M1OWRhMTdhLmpwZw.69a0fbdc8877f648/7jRL99O5riqGR81NHLyBN_a51417bafb864be793b52dd3c59da17a.jpg",
+        "costUsd": 0.0525,
+        "passes": 2
+      },
+      "score": {
+        "fidelity": 100,
+        "craft": 90,
+        "aesthetics": 90,
+        "quality": 96,
+        "value": 56.5,
+        "speed": 71.4,
+        "total": 85.6,
+        "grade": "A",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTUvN2pSTDk5TzVyaXFHUjgxTkhMeUJOX2E1MTQxN2JhZmI4NjRiZTc5M2I1MmRkM2M1OWRhMTdhLmpwZw.69a0fbdc8877f648/7jRL99O5riqGR81NHLyBN_a51417bafb864be793b52dd3c59da17a.jpg"
+    },
+    {
+      "id": "e2",
+      "model": "uni-1-t2i",
+      "prompt": "A frosted glass perfume bottle on wet black slate, a single white orchid to its left, a thin gold cap, softbox rim light, studio product shot",
+      "status": "done",
+      "startedAt": 1790187698919,
+      "renderMs": 56956,
+      "outputUrl": "/seed-media/02d67d01d628-e2.jpg",
+      "renderCostUsd": 0.0441,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "A frosted glass perfume bottle is clearly visible in the center of the frame."
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "The bottle has a frosted glass texture, appearing opaque and non-transparent."
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "A thin gold cap is present on top of the bottle."
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "The gold cap is thin and cylindrical, fitting the description."
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "The bottle is resting on a black slate surface."
+          },
+          {
+            "id": "r6",
+            "verdict": "yes",
+            "note": "The black slate appears wet, with visible water droplets and reflections."
+          },
+          {
+            "id": "r7",
+            "verdict": "yes",
+            "note": "A single white orchid is clearly visible to the left of the bottle."
+          },
+          {
+            "id": "r8",
+            "verdict": "yes",
+            "note": "The orchid is positioned to the left of the bottle, as required."
+          }
+        ],
+        "craft": 9,
+        "aesthetics": 9,
+        "defects": [],
+        "verdict": "Flawless execution with perfect alignment to brief.",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTcvaFctMjhITkMzU3lyLTM5V0Z3SElaX291dHB1dC5wbmc.bca99b1778fa15ff/hW-28HNC3Syr-39WFwHIZ_output.png",
+        "costUsd": 0.0527,
+        "passes": 2
+      },
+      "score": {
+        "fidelity": 100,
+        "craft": 90,
+        "aesthetics": 90,
+        "quality": 96,
+        "value": 53.3,
+        "speed": 61.6,
+        "total": 84,
+        "grade": "A",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTcvaFctMjhITkMzU3lyLTM5V0Z3SElaX291dHB1dC5wbmc.bca99b1778fa15ff/hW-28HNC3Syr-39WFwHIZ_output.png"
+    },
+    {
+      "id": "e3",
+      "model": "grok-imagine-quality",
+      "prompt": "A frosted glass perfume bottle on wet black slate, a single white orchid to its left, a thin gold cap, softbox rim light, studio product shot",
+      "status": "done",
+      "startedAt": 1790187698919,
+      "renderMs": 8144,
+      "outputUrl": "/seed-media/02d67d01d628-e3.jpg",
+      "renderCostUsd": 0.0525,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "A frosted glass perfume bottle is clearly visible."
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "The bottle has a frosted, translucent glass appearance."
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "The cap is gold and clearly visible."
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "The gold cap is thin and matches the description."
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "The bottle is placed on a black slate surface."
+          },
+          {
+            "id": "r6",
+            "verdict": "yes",
+            "note": "The slate is wet, with visible water droplets and reflections."
+          },
+          {
+            "id": "r7",
+            "verdict": "yes",
+            "note": "A single white orchid is present next to the bottle."
+          },
+          {
+            "id": "r8",
+            "verdict": "yes",
+            "note": "The orchid is positioned to the left of the bottle."
+          }
+        ],
+        "craft": 9,
+        "aesthetics": 9,
+        "defects": [],
+        "verdict": "Excellent execution with flawless composition, lighting, and object rendering.",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTIvTVhUVkI0anZxU3k3YUp1bnpyaC10XzBSVmxCZ3F1LmpwZw.bb128fe2ad675125/MXTVB4jvqSy7aJunzrh-t_0RVlBgqu.jpg",
+        "costUsd": 0.0236,
+        "passes": 2
+      },
+      "score": {
+        "fidelity": 100,
+        "craft": 90,
+        "aesthetics": 90,
+        "quality": 96,
+        "value": 50.3,
+        "speed": 99.7,
+        "total": 87.2,
+        "grade": "A",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTIvTVhUVkI0anZxU3k3YUp1bnpyaC10XzBSVmxCZ3F1LmpwZw.bb128fe2ad675125/MXTVB4jvqSy7aJunzrh-t_0RVlBgqu.jpg"
+    }
+  ],
+  "status": "done",
+  "round": 1,
+  "sessionId": "vouch_02d67d01d628",
+  "seed": true,
+  "winnerId": "e3"
+}

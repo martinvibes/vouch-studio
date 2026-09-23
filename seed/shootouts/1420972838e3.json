@@ -1,0 +1,252 @@
+{
+  "id": "1420972838e3",
+  "createdAt": 1790187695118,
+  "updatedAt": 1790188157817,
+  "brief": "A turquoise alpine lake at sunrise with exactly three red canoes pulled up on a pebble shore, snowy peaks reflected in still water",
+  "kind": "image",
+  "category": "landscape",
+  "requirements": [
+    {
+      "id": "r1",
+      "text": "Alpine lake is turquoise."
+    },
+    {
+      "id": "r2",
+      "text": "Sunrise lighting is present."
+    },
+    {
+      "id": "r3",
+      "text": "Exactly three red canoes are present."
+    },
+    {
+      "id": "r4",
+      "text": "Canoes are pulled up on a shore."
+    },
+    {
+      "id": "r5",
+      "text": "Shore is made of pebbles."
+    },
+    {
+      "id": "r6",
+      "text": "Snowy peaks are reflected in water."
+    },
+    {
+      "id": "r7",
+      "text": "Water is still."
+    }
+  ],
+  "entries": [
+    {
+      "id": "e1",
+      "model": "krea-2",
+      "prompt": "A turquoise alpine lake at sunrise with exactly three red canoes pulled up on a pebble shore, snowy peaks reflected in still water",
+      "status": "done",
+      "startedAt": 1790187754769,
+      "renderMs": 16858,
+      "outputUrl": "/seed-media/1420972838e3-e1.jpg",
+      "renderCostUsd": 0.0315,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "turquoise lake visible"
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "sunrise lighting with pink/orange sky hues"
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "exactly three red canoes present"
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "canoes pulled up on shore"
+          },
+          {
+            "id": "r5",
+            "verdict": "partial",
+            "note": "Shore is grassy with some pebbles but not predominantly pebbles"
+          },
+          {
+            "id": "r6",
+            "verdict": "yes",
+            "note": "snowy peaks clearly reflected in still water"
+          },
+          {
+            "id": "r7",
+            "verdict": "yes",
+            "note": "water is calm with clear reflection, no ripples visible"
+          }
+        ],
+        "craft": 6.5,
+        "aesthetics": 7,
+        "defects": [],
+        "verdict": "Excellent composition with perfect alignment to brief, minor texture inconsistencies in foreground grass but no critical flaws",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTkvcTB5X1NiU09pZlp0dFhkTERULWRWXzdiNWE4MDlmNjg2MDQzZjNiMDBmNzY3Mzk4NmE2NDU3LnBuZw.32a1f367451fdc15/q0y_SbSOifZttXdLDT-dV_7b5a809f686043f3b00f7673986a6457.png",
+        "costUsd": 0.0344,
+        "passes": 2
+      },
+      "score": {
+        "fidelity": 92.9,
+        "craft": 65,
+        "aesthetics": 70,
+        "quality": 82.5,
+        "value": 59.2,
+        "speed": 85.4,
+        "total": 78.1,
+        "grade": "B",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTkvcTB5X1NiU09pZlp0dFhkTERULWRWXzdiNWE4MDlmNjg2MDQzZjNiMDBmNzY3Mzk4NmE2NDU3LnBuZw.32a1f367451fdc15/q0y_SbSOifZttXdLDT-dV_7b5a809f686043f3b00f7673986a6457.png"
+    },
+    {
+      "id": "e2",
+      "model": "seedream-5-lite",
+      "prompt": "A turquoise alpine lake at sunrise with exactly three red canoes pulled up on a pebble shore, snowy peaks reflected in still water",
+      "status": "done",
+      "startedAt": 1790187754769,
+      "renderMs": 36342,
+      "outputUrl": "/seed-media/1420972838e3-e2.jpg",
+      "renderCostUsd": 0.0368,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "Turquoise water is clearly visible"
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "Sunrise lighting is evident from the warm glow on the left and snow-capped peaks"
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "Three red canoes are clearly visible on the shore"
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "Canoes are pulled up on a pebble shore"
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "Shore is composed of pebbles"
+          },
+          {
+            "id": "r6",
+            "verdict": "yes",
+            "note": "Snowy peaks are clearly reflected in the still water"
+          },
+          {
+            "id": "r7",
+            "verdict": "yes",
+            "note": "Water surface is perfectly still with clear reflections"
+          }
+        ],
+        "craft": 7.5,
+        "aesthetics": 7.5,
+        "defects": [],
+        "verdict": "Flawless, portfolio-grade image meeting all requirements.",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMWEvZnVWaDNuREczRE9qZmY5SHFCRk9vXzIxZmZhNzliZjI1MTQxODFhYjUwNDUyNzU3N2RiODE0LmpwZw.a80ef1b9e08d1f2a/fuVh3nDG3DOjff9HqBFOo_21ffa79bf2514181ab504527577db814.jpg",
+        "costUsd": 0.0521,
+        "passes": 2
+      },
+      "score": {
+        "fidelity": 100,
+        "craft": 75,
+        "aesthetics": 75,
+        "quality": 90,
+        "value": 56.5,
+        "speed": 70.4,
+        "total": 81.3,
+        "grade": "A",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMWEvZnVWaDNuREczRE9qZmY5SHFCRk9vXzIxZmZhNzliZjI1MTQxODFhYjUwNDUyNzU3N2RiODE0LmpwZw.a80ef1b9e08d1f2a/fuVh3nDG3DOjff9HqBFOo_21ffa79bf2514181ab504527577db814.jpg"
+    },
+    {
+      "id": "e3",
+      "model": "uni-1-t2i",
+      "prompt": "A turquoise alpine lake at sunrise with exactly three red canoes pulled up on a pebble shore, snowy peaks reflected in still water",
+      "status": "done",
+      "startedAt": 1790187754769,
+      "renderMs": 74010,
+      "outputUrl": "/seed-media/1420972838e3-e3.jpg",
+      "renderCostUsd": 0.0441,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "Water is clearly turquoise in color."
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "Soft golden light on peaks and water indicates sunrise."
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "Exactly three red canoes are visible on the shore."
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "Canoes are pulled up on the pebble shore."
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "Shore is composed of pebbles."
+          },
+          {
+            "id": "r6",
+            "verdict": "yes",
+            "note": "Snowy peaks are clearly reflected in the still water."
+          },
+          {
+            "id": "r7",
+            "verdict": "yes",
+            "note": "Water surface is calm with no ripples, indicating stillness."
+          }
+        ],
+        "craft": 9,
+        "aesthetics": 9,
+        "defects": [],
+        "verdict": "Perfectly meets all requirements with flawless execution and ideal aesthetics.",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMWUvQ2gtek5KbUtETGR5R2xGbmhSbF9KX291dHB1dC5wbmc.2526e30d2cbd8b65/Ch-zNJmKDLdyGlFnhRl_J_output.png",
+        "costUsd": 0.0518,
+        "passes": 2
+      },
+      "score": {
+        "fidelity": 100,
+        "craft": 90,
+        "aesthetics": 90,
+        "quality": 96,
+        "value": 53.3,
+        "speed": 56.5,
+        "total": 83.5,
+        "grade": "A",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMWUvQ2gtek5KbUtETGR5R2xGbmhSbF9KX291dHB1dC5wbmc.2526e30d2cbd8b65/Ch-zNJmKDLdyGlFnhRl_J_output.png"
+    }
+  ],
+  "status": "done",
+  "round": 1,
+  "sessionId": "vouch_1420972838e3",
+  "seed": true,
+  "winnerId": "e3"
+}

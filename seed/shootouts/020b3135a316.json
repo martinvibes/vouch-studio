@@ -1,0 +1,271 @@
+{
+  "id": "020b3135a316",
+  "createdAt": 1790187695117,
+  "updatedAt": 1790188132998,
+  "brief": "A vintage travel poster with the words \"VISIT LISBON\" in bold yellow letters, a red tram climbing a steep cobbled street, blue sky",
+  "kind": "image",
+  "category": "typography",
+  "requirements": [
+    {
+      "id": "r1",
+      "text": "Image is a vintage travel poster."
+    },
+    {
+      "id": "r2",
+      "text": "Text \"VISIT LISBON\" is present."
+    },
+    {
+      "id": "r3",
+      "text": "Text \"VISIT LISBON\" is bold."
+    },
+    {
+      "id": "r4",
+      "text": "Text \"VISIT LISBON\" is yellow."
+    },
+    {
+      "id": "r5",
+      "text": "A tram is present."
+    },
+    {
+      "id": "r6",
+      "text": "The tram is red."
+    },
+    {
+      "id": "r7",
+      "text": "The tram is climbing a street."
+    },
+    {
+      "id": "r8",
+      "text": "The street is cobbled."
+    }
+  ],
+  "entries": [
+    {
+      "id": "e1",
+      "model": "ideogram-v4",
+      "prompt": "A vintage travel poster with the words \"VISIT LISBON\" in bold yellow letters, a red tram climbing a steep cobbled street, blue sky",
+      "status": "done",
+      "startedAt": 1790187699291,
+      "renderMs": 12615,
+      "outputUrl": "/seed-media/020b3135a316-e1.jpg",
+      "renderCostUsd": 0.0158,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "Image has vintage travel poster style with white border and classic typography"
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "\"VISIT LISBON\" text is clearly visible in bold yellow letters at the top"
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "\"VISIT LISBON\" text is bold as required"
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "\"VISIT LISBON\" text is yellow as specified"
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "A tram is clearly visible in the center of the image"
+          },
+          {
+            "id": "r6",
+            "verdict": "no",
+            "note": "Tram is yellow, not red as required"
+          },
+          {
+            "id": "r7",
+            "verdict": "yes",
+            "note": "Tram is positioned on tracks climbing a steep incline"
+          },
+          {
+            "id": "r8",
+            "verdict": "yes",
+            "note": "Street surface shows clear cobblestone pattern"
+          }
+        ],
+        "craft": 7.5,
+        "aesthetics": 8.5,
+        "defects": [],
+        "verdict": "Mostly meets requirements with color discrepancy in tram",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTIva0FrYkV2RXoxRURKMDZoRXEtX2tjX0EzUmI5S25qLmpwZw.b18ba5846c30f431/kAkbEvEz1EDJ06hEq-_kc_A3Rb9Knj.jpg",
+        "costUsd": 0.0241,
+        "passes": 2
+      },
+      "score": {
+        "fidelity": 87.5,
+        "craft": 75,
+        "aesthetics": 85,
+        "quality": 84,
+        "value": 71.1,
+        "speed": 91.1,
+        "total": 82.1,
+        "grade": "A",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTIva0FrYkV2RXoxRURKMDZoRXEtX2tjX0EzUmI5S25qLmpwZw.b18ba5846c30f431/kAkbEvEz1EDJ06hEq-_kc_A3Rb9Knj.jpg"
+    },
+    {
+      "id": "e2",
+      "model": "flux-dev",
+      "prompt": "A vintage travel poster with the words \"VISIT LISBON\" in bold yellow letters, a red tram climbing a steep cobbled street, blue sky",
+      "status": "done",
+      "startedAt": 1790187699291,
+      "renderMs": 5924,
+      "outputUrl": "/seed-media/020b3135a316-e2.jpg",
+      "renderCostUsd": 0.0263,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "vintage travel poster style with classic typography and composition"
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "Text \"VISIT LISBON\" is clearly present in large letters"
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "Text \"VISIT LISBON\" is rendered in bold yellow letters as required"
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "Text \"VISIT LISBON\" is bold and yellow as specified"
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "A vintage red tram is prominently featured in the image"
+          },
+          {
+            "id": "r6",
+            "verdict": "yes",
+            "note": "The tram is red, matching the requirement"
+          },
+          {
+            "id": "r7",
+            "verdict": "yes",
+            "note": "The tram is positioned climbing the steep cobbled street"
+          },
+          {
+            "id": "r8",
+            "verdict": "yes",
+            "note": "The street is clearly cobbled with visible stone paving"
+          }
+        ],
+        "craft": 9,
+        "aesthetics": 9,
+        "defects": [],
+        "verdict": "Excellent vintage travel poster with all requirements met, technically flawless and aesthetically strong",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTIvQURUdzg1T1lUa2RuOGxiY2dsS0tmLmpwZw.e73d57379f4ec952/ADTw85OYTkdn8lbcglKKf.jpg",
+        "costUsd": 0.0315,
+        "passes": 1
+      },
+      "score": {
+        "fidelity": 100,
+        "craft": 90,
+        "aesthetics": 90,
+        "quality": 96,
+        "value": 62.3,
+        "speed": 100,
+        "total": 89.7,
+        "grade": "A",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTIvQURUdzg1T1lUa2RuOGxiY2dsS0tmLmpwZw.e73d57379f4ec952/ADTw85OYTkdn8lbcglKKf.jpg"
+    },
+    {
+      "id": "e3",
+      "model": "krea-2",
+      "prompt": "A vintage travel poster with the words \"VISIT LISBON\" in bold yellow letters, a red tram climbing a steep cobbled street, blue sky",
+      "status": "done",
+      "startedAt": 1790187699291,
+      "renderMs": 16598,
+      "outputUrl": "/seed-media/020b3135a316-e3.jpg",
+      "renderCostUsd": 0.0315,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "Poster has vintage grunge texture and stylized composition typical of travel posters."
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "Text \"VISIT LISBON\" is clearly visible."
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "Text is rendered in a bold, blocky sans-serif style."
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "Text color is bright yellow as required."
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "A tram is prominently featured in the image."
+          },
+          {
+            "id": "r6",
+            "verdict": "yes",
+            "note": "The tram is predominantly red with yellow accents."
+          },
+          {
+            "id": "r7",
+            "verdict": "yes",
+            "note": "The tram is angled uphill on tracks, indicating it is climbing."
+          },
+          {
+            "id": "r8",
+            "verdict": "yes",
+            "note": "The street surface is clearly cobbled."
+          }
+        ],
+        "craft": 8.5,
+        "aesthetics": 9,
+        "defects": [],
+        "verdict": "Excellent vintage travel poster with all requirements satisfied.",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTMvSXlWaVhDdWM0MXZfWXJhcVhNVjgtX2RhMGY4Y2U5ODA4ZDRiNjU4NWIzNjVhZTQxNDIyNzJjLnBuZw.93d6ec0218ca7d9d/IyViXCuc41v_YraqXMV8-_da0f8ce9808d4b6585b365ae4142272c.png",
+        "costUsd": 0.0361,
+        "passes": 2
+      },
+      "score": {
+        "fidelity": 100,
+        "craft": 85,
+        "aesthetics": 90,
+        "quality": 94.8,
+        "value": 59.2,
+        "speed": 85.7,
+        "total": 86.8,
+        "grade": "A",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTMvSXlWaVhDdWM0MXZfWXJhcVhNVjgtX2RhMGY4Y2U5ODA4ZDRiNjU4NWIzNjVhZTQxNDIyNzJjLnBuZw.93d6ec0218ca7d9d/IyViXCuc41v_YraqXMV8-_da0f8ce9808d4b6585b365ae4142272c.png"
+    }
+  ],
+  "status": "done",
+  "round": 1,
+  "sessionId": "vouch_020b3135a316",
+  "seed": true,
+  "winnerId": "e2"
+}

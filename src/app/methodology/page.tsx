@@ -57,7 +57,7 @@ export default function Methodology() {
 
         <h2>5. The Board learns from every shootout</h2>
         <p>
-          Graded renders roll up per model, overall and per kind of shot. The next lineup is built from that record: the best-scoring model for
+          Graded renders roll up per model, overall and per kind of shot. A render that failed counts as 0 in the model&apos;s Vouch score, because that is what you got when you called it. The next lineup is built from that record: the best-scoring model for
           your kind of brief, the best value among models above 70 quality, and a challenger that has been tested least, so each run also teaches the Board something.
         </p>
         <p>

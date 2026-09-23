@@ -1,0 +1,238 @@
+{
+  "id": "eefa3b6af633",
+  "createdAt": 1790187695119,
+  "updatedAt": 1790188225265,
+  "brief": "A skateboarder ollies over a concrete ledge at sunset, camera follows low and close, sparks of dust on landing",
+  "kind": "video",
+  "category": "action",
+  "requirements": [
+    {
+      "id": "r1",
+      "text": "Subject: Skateboarder"
+    },
+    {
+      "id": "r2",
+      "text": "Action: Ollies"
+    },
+    {
+      "id": "r3",
+      "text": "Object ollied over: Concrete ledge"
+    },
+    {
+      "id": "r4",
+      "text": "Time of day: Sunset"
+    },
+    {
+      "id": "r5",
+      "text": "Camera movement: Follows low and close"
+    },
+    {
+      "id": "r6",
+      "text": "Landing: Sparks of dust present"
+    }
+  ],
+  "entries": [
+    {
+      "id": "e1",
+      "model": "kling-v3-turbo-t2v",
+      "prompt": "A skateboarder ollies over a concrete ledge at sunset, camera follows low and close, sparks of dust on landing",
+      "status": "done",
+      "startedAt": 1790187841756,
+      "renderMs": 170706,
+      "outputUrl": "/seed-media/eefa3b6af633-e1.mp4",
+      "renderCostUsd": 0.588,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "Skateboarder is clearly visible in all frames"
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "Skateboarder is mid-air over ledge in middle frame"
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "Concrete ledge is clearly visible in left and middle frames"
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "Sunset lighting with warm hues visible in all frames"
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "Camera follows low and close, skateboarder remains prominent"
+          },
+          {
+            "id": "r6",
+            "verdict": "yes",
+            "note": "Sparks/dust visible at landing in right frame"
+          }
+        ],
+        "craft": 8.5,
+        "aesthetics": 8.5,
+        "defects": [],
+        "verdict": "Excellent execution meeting all brief requirements with cinematic quality",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly83eTRmbHpwdWxndjRjbzZyLnB1YmxpYy5ibG9iLnZlcmNlbC1zdG9yYWdlLmNvbS91cGxvYWRzLzE3OTAxODgwMTg4NjMtaDRvbzUwLmpwZWc.ae367bcc6ee6b3ec/1790188018863-h4oo50.jpeg",
+        "costUsd": 0.0232,
+        "passes": 2
+      },
+      "score": {
+        "fidelity": 100,
+        "craft": 85,
+        "aesthetics": 85,
+        "quality": 94,
+        "value": 57.2,
+        "speed": 71.6,
+        "total": 84.4,
+        "grade": "A",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMzEvV0h1TW5SY0lfMmRwT1NQV0c0bUdGX291dHB1dC5tcDQ.175b5da46986897c/WHuMnRcI_2dpOSPWG4mGF_output.mp4"
+    },
+    {
+      "id": "e2",
+      "model": "ray-32-t2v",
+      "prompt": "A skateboarder ollies over a concrete ledge at sunset, camera follows low and close, sparks of dust on landing",
+      "status": "done",
+      "startedAt": 1790187841756,
+      "renderMs": 47994,
+      "outputUrl": "/seed-media/eefa3b6af633-e2.mp4",
+      "renderCostUsd": 0.315,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "Skateboarder is visible in all three frames"
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "Ollie action is clearly depicted in the middle frame with the board in mid-air"
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "Concrete ledge is visible and the skateboarder ollies over it in the first and middle frames"
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "Sunset lighting is evident with the sun low on the horizon and warm colors"
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "Camera follows low and close, capturing the action from a low angle"
+          },
+          {
+            "id": "r6",
+            "verdict": "partial",
+            "note": "Dust is visible on landing in the right frame, but not clearly defined as sparks"
+          }
+        ],
+        "craft": 7,
+        "aesthetics": 7.5,
+        "defects": [
+          "minor blur on moving parts",
+          "inconsistent lighting between frames",
+          "slightly unnatural leg proportions",
+          "ambiguous background details"
+        ],
+        "verdict": "Well-executed with minor flaws, effectively captures the intended scene",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly83eTRmbHpwdWxndjRjbzZyLnB1YmxpYy5ibG9iLnZlcmNlbC1zdG9yYWdlLmNvbS91cGxvYWRzLzE3OTAxODc4OTI3MjEtMGJxeHRiLmpwZWc.94d59effef9a9506/1790187892721-0bqxtb.jpeg",
+        "costUsd": 0.0157,
+        "passes": 2
+      },
+      "score": {
+        "fidelity": 91.7,
+        "craft": 70,
+        "aesthetics": 75,
+        "quality": 83.8,
+        "value": 68,
+        "speed": 96.4,
+        "total": 81.9,
+        "grade": "A",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMjQvb1NTZ1hfTVVtMHoxY2pwUDQwa2FJX291dHB1dC5tcDQ.fd34370b3f6a056d/oSSgX_MUm0z1cjpP40kaI_output.mp4"
+    },
+    {
+      "id": "e3",
+      "model": "minimax-h3-t2v",
+      "prompt": "A skateboarder ollies over a concrete ledge at sunset, camera follows low and close, sparks of dust on landing",
+      "status": "done",
+      "startedAt": 1790187841756,
+      "renderMs": 258500,
+      "outputUrl": "/seed-media/eefa3b6af633-e3.mp4",
+      "renderCostUsd": 0.504,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "Skateboarder present in all frames"
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "Ollie action shown across frames, especially mid-frame"
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "Concrete ledge clearly ollied over in middle frame"
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "Sunset lighting with low sun visible in background"
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "Camera follows low and close, evident from perspective and motion blur"
+          },
+          {
+            "id": "r6",
+            "verdict": "partial",
+            "note": "Landing dust not clearly visible, may be obscured or too subtle"
+          }
+        ],
+        "craft": 8,
+        "aesthetics": 8,
+        "defects": [],
+        "verdict": "Strong execution with minor ambiguity in dust detail",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly83eTRmbHpwdWxndjRjbzZyLnB1YmxpYy5ibG9iLnZlcmNlbC1zdG9yYWdlLmNvbS91cGxvYWRzLzE3OTAxODgxMDgxMTUtdjd5bWRoLmpwZWc.b4deb7bf9143dda2/1790188108115-v7ymdh.jpeg",
+        "costUsd": 0.0157,
+        "passes": 2
+      },
+      "score": {
+        "fidelity": 91.7,
+        "craft": 80,
+        "aesthetics": 80,
+        "quality": 87,
+        "value": 59.9,
+        "speed": 63.5,
+        "total": 79.2,
+        "grade": "B",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMmMvNHh1QUplak9GdGEwUnVBcWdFUTNVX21pbmltYXgtaDMubXA0.8a0d7e51bb1ff5b7/4xuAJejOFta0RuAqgEQ3U_minimax-h3.mp4"
+    }
+  ],
+  "status": "done",
+  "round": 1,
+  "sessionId": "vouch_eefa3b6af633",
+  "seed": true,
+  "winnerId": "e1"
+}

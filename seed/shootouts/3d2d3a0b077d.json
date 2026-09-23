@@ -1,0 +1,214 @@
+{
+  "id": "3d2d3a0b077d",
+  "createdAt": 1790187695119,
+  "updatedAt": 1790188217966,
+  "brief": "A glass perfume bottle rotating slowly on a mirrored turntable, soft pink backdrop, light glinting off its facets",
+  "kind": "video",
+  "category": "product",
+  "requirements": [
+    {
+      "id": "r1",
+      "text": "A glass perfume bottle is present."
+    },
+    {
+      "id": "r2",
+      "text": "The perfume bottle is rotating slowly."
+    },
+    {
+      "id": "r3",
+      "text": "A mirrored turntable is present."
+    },
+    {
+      "id": "r4",
+      "text": "A soft pink backdrop is present."
+    },
+    {
+      "id": "r5",
+      "text": "Light is glinting off its facets."
+    }
+  ],
+  "entries": [
+    {
+      "id": "e1",
+      "model": "ltx-25-t2v-fast",
+      "prompt": "A glass perfume bottle rotating slowly on a mirrored turntable, soft pink backdrop, light glinting off its facets",
+      "status": "done",
+      "startedAt": 1790187797794,
+      "renderMs": 22654,
+      "outputUrl": "/seed-media/3d2d3a0b077d-e1.mp4",
+      "renderCostUsd": 0.567,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "A clear glass perfume bottle is centered in each frame."
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "The bottle's position shifts slightly between frames, indicating slow rotation."
+          },
+          {
+            "id": "r3",
+            "verdict": "partial",
+            "note": "Not assessed by the judge."
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "The background is a consistent, soft pink gradient across all frames."
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "Light reflects brightly off the bottle's facets, visible as glints in each frame."
+          }
+        ],
+        "craft": 9,
+        "aesthetics": 9,
+        "defects": [],
+        "verdict": "The video meets all brief requirements with high technical and aesthetic quality.",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly83eTRmbHpwdWxndjRjbzZyLnB1YmxpYy5ibG9iLnZlcmNlbC1zdG9yYWdlLmNvbS91cGxvYWRzLzE3OTAxODc4MjUwNzQtc21hcGZmLmpwZWc.d527c6993522b3dd/1790187825074-smapff.jpeg",
+        "costUsd": 0.0294,
+        "passes": 2
+      },
+      "score": {
+        "fidelity": 90,
+        "craft": 90,
+        "aesthetics": 90,
+        "quality": 90,
+        "value": 57.8,
+        "speed": 100,
+        "total": 84.6,
+        "grade": "A",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMWMvYVAwXzNrUmZiYl8wc2toME1NWEMxX3lJSjMzaEJNLm1wNA.ef555afcfe5987cc/aP0_3kRfbb_0skh0MMXC1_yIJ33hBM.mp4"
+    },
+    {
+      "id": "e2",
+      "model": "pixverse-t2v",
+      "prompt": "A glass perfume bottle rotating slowly on a mirrored turntable, soft pink backdrop, light glinting off its facets",
+      "status": "done",
+      "startedAt": 1790187797794,
+      "renderMs": 44558,
+      "outputUrl": "/seed-media/3d2d3a0b077d-e2.mp4",
+      "renderCostUsd": 0.3413,
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMWYvbFpXQXFaNzhFOG5fVmZYdkFQN00wX291dHB1dC5tcDQ.2e3c16c6cf308099/lZWAqZ78E8n_VfXvAP7M0_output.mp4",
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "A glass perfume bottle is clearly visible in all three frames."
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "The bottle appears to be slowly rotating as shown by the changing angles of the facets across the frames."
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "The bottle is placed on a reflective mirrored turntable, visible in all frames."
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "A soft pink backdrop is consistently present in all three frames."
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "Light is glinting off the facets of the bottle, clearly visible in all frames."
+          }
+        ],
+        "craft": 9,
+        "aesthetics": 9,
+        "defects": [],
+        "verdict": "Excellent execution with flawless composition, lighting, and object rendering.",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly83eTRmbHpwdWxndjRjbzZyLnB1YmxpYy5ibG9iLnZlcmNlbC1zdG9yYWdlLmNvbS91cGxvYWRzLzE3OTAxOTA1NDQyMjAtZ2l5dzZnLmpwZWc.61da901c813f3521/1790190544220-giyw6g.jpeg",
+        "costUsd": 0.0219,
+        "passes": 1
+      },
+      "score": {
+        "fidelity": 100,
+        "craft": 90,
+        "aesthetics": 90,
+        "quality": 96,
+        "value": 66.6,
+        "speed": 97.9,
+        "total": 90.3,
+        "grade": "A",
+        "caps": []
+      }
+    },
+    {
+      "id": "e3",
+      "model": "ltx-t2v",
+      "prompt": "A glass perfume bottle rotating slowly on a mirrored turntable, soft pink backdrop, light glinting off its facets",
+      "status": "done",
+      "startedAt": 1790187797794,
+      "renderMs": 87079,
+      "outputUrl": "/seed-media/3d2d3a0b077d-e3.mp4",
+      "renderCostUsd": 0.378,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "glass perfume bottle is clearly visible in all frames"
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "bottle appears to rotate slowly as position shifts subtly across frames, showing different facets"
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "mirrored turntable is visible beneath the bottle with clear reflections in all frames"
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "soft pink backdrop is consistent and clearly visible behind the bottle in all frames"
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "bright light glints off multiple facets of the bottle, especially visible in rightmost frame"
+          }
+        ],
+        "craft": 9,
+        "aesthetics": 8,
+        "defects": [],
+        "verdict": "high quality, minor lighting variation across frames",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly83eTRmbHpwdWxndjRjbzZyLnB1YmxpYy5ibG9iLnZlcmNlbC1zdG9yYWdlLmNvbS91cGxvYWRzLzE3OTAxODc4OTEzMzctcmx1MjdtLmpwZWc.7110147e4f463b5e/1790187891337-rlu27m.jpeg",
+        "costUsd": 0.0219,
+        "passes": 1
+      },
+      "score": {
+        "fidelity": 100,
+        "craft": 90,
+        "aesthetics": 80,
+        "quality": 94.5,
+        "value": 64.9,
+        "speed": 84.8,
+        "total": 87.6,
+        "grade": "A",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMWQvUHlBT1RqTmJ1bUJ2ZWNSUldBNzhmX3Byc1hoakQ5Lm1wNA.7012dc5f753e738c/PyAOTjNbumBvecRRWA78f_prsXhjD9.mp4"
+    }
+  ],
+  "status": "done",
+  "round": 1,
+  "sessionId": "vouch_3d2d3a0b077d",
+  "seed": true,
+  "winnerId": "e2"
+}

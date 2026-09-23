@@ -1,0 +1,233 @@
+{
+  "id": "e6b4cf24b8de",
+  "createdAt": 1790187695118,
+  "updatedAt": 1790188168681,
+  "brief": "A bowl of tonkotsu ramen seen from above: a halved soft-boiled egg, three slices of chashu, a sheet of nori standing upright, chopsticks resting on the rim",
+  "kind": "image",
+  "category": "food",
+  "requirements": [
+    {
+      "id": "r1",
+      "text": "A bowl of tonkotsu ramen is visible."
+    },
+    {
+      "id": "r2",
+      "text": "The scene is \"seen from above\"."
+    },
+    {
+      "id": "r3",
+      "text": "A \"halved soft-boiled egg\" is visible."
+    },
+    {
+      "id": "r4",
+      "text": "\"three slices of chashu\" are visible."
+    },
+    {
+      "id": "r5",
+      "text": "A \"sheet of nori standing upright\" is visible."
+    },
+    {
+      "id": "r6",
+      "text": "Chopsticks are \"resting on the rim\"."
+    }
+  ],
+  "entries": [
+    {
+      "id": "e1",
+      "model": "gemini-image",
+      "prompt": "A bowl of tonkotsu ramen seen from above: a halved soft-boiled egg, three slices of chashu, a sheet of nori standing upright, chopsticks resting on the rim",
+      "status": "done",
+      "startedAt": 1790187698867,
+      "renderMs": 7987,
+      "outputUrl": "/seed-media/e6b4cf24b8de-e1.jpg",
+      "renderCostUsd": 0.0041,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "bowl of tonkotsu ramen visible"
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "view is from above the bowl"
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "halved soft-boiled egg with yolk visible"
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "three slices of chashu clearly visible"
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "nori sheet standing upright behind egg and chopsticks"
+          },
+          {
+            "id": "r6",
+            "verdict": "yes",
+            "note": "chopsticks resting on rim of bowl"
+          }
+        ],
+        "craft": 9.5,
+        "aesthetics": 9.5,
+        "defects": [],
+        "verdict": "Perfect compliance with all brief requirements, flawless technical execution, and professional aesthetic quality.",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTIvSVV0WkZMNWUwSjc5TEowOEpGVkY0X0k4dHppako4LnBuZw.4ed3f242ac07582e/IUtZFL5e0J79LJ08JFVF4_I8tzijJ8.png",
+        "costUsd": 0.023,
+        "passes": 2
+      },
+      "score": {
+        "fidelity": 100,
+        "craft": 95,
+        "aesthetics": 95,
+        "quality": 98,
+        "value": 94.6,
+        "speed": 100,
+        "total": 97.5,
+        "grade": "S",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTIvSVV0WkZMNWUwSjc5TEowOEpGVkY0X0k4dHppako4LnBuZw.4ed3f242ac07582e/IUtZFL5e0J79LJ08JFVF4_I8tzijJ8.png"
+    },
+    {
+      "id": "e2",
+      "model": "krea-2-turbo",
+      "prompt": "A bowl of tonkotsu ramen seen from above: a halved soft-boiled egg, three slices of chashu, a sheet of nori standing upright, chopsticks resting on the rim",
+      "status": "done",
+      "startedAt": 1790187698867,
+      "renderMs": 11771,
+      "outputUrl": "/seed-media/e6b4cf24b8de-e2.jpg",
+      "renderCostUsd": 0.0158,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "bowl of tonkotsu ramen is clearly visible from above"
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "the image is taken from a direct top-down perspective"
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "halved soft-boiled egg with visible yolk is centered and clearly visible"
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "three distinct slices of chashu are clearly visible in the bowl"
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "sheet of nori is standing upright on the right side of the bowl"
+          },
+          {
+            "id": "r6",
+            "verdict": "yes",
+            "note": "chopsticks are resting on the rim of the bowl in the upper portion of the image"
+          }
+        ],
+        "craft": 9,
+        "aesthetics": 9,
+        "defects": [],
+        "verdict": "Excellent execution with flawless composition, lighting, and detail adherence to brief",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTIvUkxEbDNyNTZfWTNsNEJuWXJUSWFnX2NhOWVmOGFhZjBhZTRiODQ4N2E3ZDAwMjY2YTNjOTYxLnBuZw.5305fdfce489df70/RLDl3r56_Y3l4BnYrTIag_ca9ef8aaf0ae4b8487a7d00266a3c961.png",
+        "costUsd": 0.023,
+        "passes": 2
+      },
+      "score": {
+        "fidelity": 100,
+        "craft": 90,
+        "aesthetics": 90,
+        "quality": 96,
+        "value": 71.1,
+        "speed": 92.5,
+        "total": 90.7,
+        "grade": "A",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTIvUkxEbDNyNTZfWTNsNEJuWXJUSWFnX2NhOWVmOGFhZjBhZTRiODQ4N2E3ZDAwMjY2YTNjOTYxLnBuZw.5305fdfce489df70/RLDl3r56_Y3l4BnYrTIag_ca9ef8aaf0ae4b8487a7d00266a3c961.png"
+    },
+    {
+      "id": "e3",
+      "model": "ideogram-v4",
+      "prompt": "A bowl of tonkotsu ramen seen from above: a halved soft-boiled egg, three slices of chashu, a sheet of nori standing upright, chopsticks resting on the rim",
+      "status": "done",
+      "startedAt": 1790187698867,
+      "renderMs": 20104,
+      "outputUrl": "/seed-media/e6b4cf24b8de-e3.jpg",
+      "renderCostUsd": 0.0158,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "A bowl of ramen is clearly visible"
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "Image is a top-down view of the bowl"
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "A halved soft-boiled egg is clearly visible in the center"
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "Three distinct slices of chashu are visible in the bowl"
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "A sheet of nori is standing upright on the rim of the bowl"
+          },
+          {
+            "id": "r6",
+            "verdict": "yes",
+            "note": "Chopsticks are resting on the rim of the bowl"
+          }
+        ],
+        "craft": 4.5,
+        "aesthetics": 4.5,
+        "defects": [],
+        "verdict": "Excellent compliance with all requirements, flawless execution.",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTMvTk94amx1djFQTm5JTE9FaFlGbVktX0ZnaVl0V1lPLmpwZw.6f2f548f7446b11a/NOxjluv1PNnILOEhYFmY-_FgiYtWYO.jpg",
+        "costUsd": 0.0227,
+        "passes": 2
+      },
+      "score": {
+        "fidelity": 100,
+        "craft": 45,
+        "aesthetics": 45,
+        "quality": 78,
+        "value": 71.1,
+        "speed": 82,
+        "total": 77,
+        "grade": "B",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTMvTk94amx1djFQTm5JTE9FaFlGbVktX0ZnaVl0V1lPLmpwZw.6f2f548f7446b11a/NOxjluv1PNnILOEhYFmY-_FgiYtWYO.jpg"
+    }
+  ],
+  "status": "done",
+  "round": 1,
+  "sessionId": "vouch_e6b4cf24b8de",
+  "seed": true,
+  "winnerId": "e1"
+}

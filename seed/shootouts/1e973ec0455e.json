@@ -1,0 +1,271 @@
+{
+  "id": "1e973ec0455e",
+  "createdAt": 1790187695117,
+  "updatedAt": 1790188144170,
+  "brief": "A matte black wireless headphone floating above a concrete plinth, one ear cup rotated toward the camera, orange backdrop, hard shadow",
+  "kind": "image",
+  "category": "product",
+  "requirements": [
+    {
+      "id": "r1",
+      "text": "Subject is a headphone."
+    },
+    {
+      "id": "r2",
+      "text": "Headphone is wireless."
+    },
+    {
+      "id": "r3",
+      "text": "Headphone is matte black."
+    },
+    {
+      "id": "r4",
+      "text": "Headphone is floating."
+    },
+    {
+      "id": "r5",
+      "text": "Plinth is concrete."
+    },
+    {
+      "id": "r6",
+      "text": "One ear cup is rotated toward camera."
+    },
+    {
+      "id": "r7",
+      "text": "Backdrop is orange."
+    },
+    {
+      "id": "r8",
+      "text": "Shadow is hard."
+    }
+  ],
+  "entries": [
+    {
+      "id": "e1",
+      "model": "flux-pro",
+      "prompt": "A matte black wireless headphone floating above a concrete plinth, one ear cup rotated toward the camera, orange backdrop, hard shadow",
+      "status": "done",
+      "startedAt": 1790187747890,
+      "renderMs": 10176,
+      "outputUrl": "/seed-media/1e973ec0455e-e1.jpg",
+      "renderCostUsd": 0.063,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "Subject is a headphone."
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "Wireless headphone, no visible wires, consistent with modern design."
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "Headphone is matte black."
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "Headphone appears to be floating above the plinth."
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "Plinth is a concrete texture, light beige, consistent with concrete."
+          },
+          {
+            "id": "r6",
+            "verdict": "yes",
+            "note": "One ear cup is rotated toward the camera."
+          },
+          {
+            "id": "r7",
+            "verdict": "yes",
+            "note": "Background is solid orange."
+          },
+          {
+            "id": "r8",
+            "verdict": "yes",
+            "note": "Hard, distinct shadow of the headphone on the plinth and wall."
+          }
+        ],
+        "craft": 9,
+        "aesthetics": 9,
+        "defects": [],
+        "verdict": "Perfect execution of all requirements.",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTcvbUw2SzJOMXZrR3pHRWxodUIyc1dqXzBlYzY1ZDY4YWQ3NTQ0YzlhMDFiNGFhNGQ4NzNkOGU0LmpwZw.1557ac8d9877581d/mL6K2N1vkGzGElhuB2sWj_0ec65d68ad7544c9a01b4aa4d873d8e4.jpg",
+        "costUsd": 0.0523,
+        "passes": 2
+      },
+      "score": {
+        "fidelity": 100,
+        "craft": 90,
+        "aesthetics": 90,
+        "quality": 96,
+        "value": 47.1,
+        "speed": 95.3,
+        "total": 86.1,
+        "grade": "A",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTcvbUw2SzJOMXZrR3pHRWxodUIyc1dqXzBlYzY1ZDY4YWQ3NTQ0YzlhMDFiNGFhNGQ4NzNkOGU0LmpwZw.1557ac8d9877581d/mL6K2N1vkGzGElhuB2sWj_0ec65d68ad7544c9a01b4aa4d873d8e4.jpg"
+    },
+    {
+      "id": "e2",
+      "model": "flux-schnell",
+      "prompt": "A matte black wireless headphone floating above a concrete plinth, one ear cup rotated toward the camera, orange backdrop, hard shadow",
+      "status": "done",
+      "startedAt": 1790187747890,
+      "renderMs": 9783,
+      "outputUrl": "/seed-media/1e973ec0455e-e2.jpg",
+      "renderCostUsd": 0.0032,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "Headphone is clearly visible."
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "No wires visible, consistent with wireless design."
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "Headphone appears matte black with no shine."
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "Headphone is suspended in mid-air, clearly floating."
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "Plinth is a solid, textured concrete block."
+          },
+          {
+            "id": "r6",
+            "verdict": "yes",
+            "note": "Left ear cup is rotated toward the camera."
+          },
+          {
+            "id": "r7",
+            "verdict": "yes",
+            "note": "Background is a solid, vibrant orange."
+          },
+          {
+            "id": "r8",
+            "verdict": "yes",
+            "note": "Hard shadow cast by the plinth is visible."
+          }
+        ],
+        "craft": 9,
+        "aesthetics": 9,
+        "defects": [],
+        "verdict": "Flawless execution meeting all brief requirements.",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTcvQ3d0ekZUOVZQODNPcW83QXAtQ0F2LmpwZw.4a095cf0fc2afef2/CwtzFT9VP83Oqo7Ap-CAv.jpg",
+        "costUsd": 0.0199,
+        "passes": 2
+      },
+      "score": {
+        "fidelity": 100,
+        "craft": 90,
+        "aesthetics": 90,
+        "quality": 96,
+        "value": 98.9,
+        "speed": 96.1,
+        "total": 96.6,
+        "grade": "S",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTcvQ3d0ekZUOVZQODNPcW83QXAtQ0F2LmpwZw.4a095cf0fc2afef2/CwtzFT9VP83Oqo7Ap-CAv.jpg"
+    },
+    {
+      "id": "e3",
+      "model": "gemini-image",
+      "prompt": "A matte black wireless headphone floating above a concrete plinth, one ear cup rotated toward the camera, orange backdrop, hard shadow",
+      "status": "done",
+      "startedAt": 1790187747890,
+      "renderMs": 8397,
+      "outputUrl": "/seed-media/1e973ec0455e-e3.jpg",
+      "renderCostUsd": 0.0041,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "Headphone is clearly visible as the subject."
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "Headphone is wireless; no visible wires."
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "Headphone is matte black with no glossy reflections."
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "Headphone is floating above the plinth with no support."
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "Plinth is a concrete block with visible texture."
+          },
+          {
+            "id": "r6",
+            "verdict": "yes",
+            "note": "One ear cup is rotated toward the camera, showing its inner side."
+          },
+          {
+            "id": "r7",
+            "verdict": "yes",
+            "note": "Backdrop is a solid orange gradient."
+          },
+          {
+            "id": "r8",
+            "verdict": "yes",
+            "note": "Hard shadow is cast by the plinth and headphone."
+          }
+        ],
+        "craft": 9.5,
+        "aesthetics": 9.5,
+        "defects": [],
+        "verdict": "Perfectly meets all requirements with flawless execution and professional aesthetics.",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTcva2ZVbEY2UEd3R0VRcGlXNFZSR09aX2VsdExmSW5vLnBuZw.6fa5b8aa393d7709/kfUlF6PGwGEQpiW4VRGOZ_eltLfIno.png",
+        "costUsd": 0.0353,
+        "passes": 2
+      },
+      "score": {
+        "fidelity": 100,
+        "craft": 95,
+        "aesthetics": 95,
+        "quality": 98,
+        "value": 94.6,
+        "speed": 99.1,
+        "total": 97.4,
+        "grade": "S",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTcva2ZVbEY2UEd3R0VRcGlXNFZSR09aX2VsdExmSW5vLnBuZw.6fa5b8aa393d7709/kfUlF6PGwGEQpiW4VRGOZ_eltLfIno.png"
+    }
+  ],
+  "status": "done",
+  "round": 1,
+  "sessionId": "vouch_1e973ec0455e",
+  "seed": true,
+  "winnerId": "e3"
+}

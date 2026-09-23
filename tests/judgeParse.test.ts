@@ -91,3 +91,13 @@ describe("parseJudgeJson", () => {
     expect(parseJudgeJson('{"hello":"world"}', ids)).toBeNull();
   });
 });
+
+describe("trailing commas", () => {
+  it("recovers a verdict with a trailing comma in the checks array (seen live from the video judge)", () => {
+    const text =
+      '{"checks":[{"id":"r1","verdict":"yes","note":"bottle visible"},{"id":"r2","verdict":"partial","note":"slow turn"},],"craft":9,"aesthetics":8,"defects":[],"verdict":"good",}';
+    const out = parseJudgeJson(text, ["r1", "r2"]);
+    expect(out?.checks.map((c) => c.verdict)).toEqual(["yes", "partial"]);
+    expect(out?.craft).toBe(9);
+  });
+});

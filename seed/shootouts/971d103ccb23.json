@@ -1,0 +1,271 @@
+{
+  "id": "971d103ccb23",
+  "createdAt": 1790187695118,
+  "updatedAt": 1790188163424,
+  "brief": "A small green robot with one round eye watering a potted sunflower on a windowsill, rain on the glass behind it, Pixar-style 3D",
+  "kind": "image",
+  "category": "character",
+  "requirements": [
+    {
+      "id": "r1",
+      "text": "Robot is green."
+    },
+    {
+      "id": "r2",
+      "text": "Robot has one round eye."
+    },
+    {
+      "id": "r3",
+      "text": "Robot is watering a sunflower."
+    },
+    {
+      "id": "r4",
+      "text": "Sunflower is in a pot."
+    },
+    {
+      "id": "r5",
+      "text": "Potted sunflower is on a windowsill."
+    },
+    {
+      "id": "r6",
+      "text": "Rain is on the glass behind the robot."
+    },
+    {
+      "id": "r7",
+      "text": "Image is Pixar-style 3D."
+    },
+    {
+      "id": "r8",
+      "text": "Robot is small."
+    }
+  ],
+  "entries": [
+    {
+      "id": "e1",
+      "model": "grok-imagine-quality",
+      "prompt": "A small green robot with one round eye watering a potted sunflower on a windowsill, rain on the glass behind it, Pixar-style 3D",
+      "status": "done",
+      "startedAt": 1790187721077,
+      "renderMs": 14270,
+      "outputUrl": "/seed-media/971d103ccb23-e1.jpg",
+      "renderCostUsd": 0.0525,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "Robot is green with visible green body and limbs."
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "Robot has one large round eye with blue iris."
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "Robot is holding a yellow watering can nozzle spraying water onto the sunflower."
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "Sunflower is clearly in a terracotta pot."
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "Potted sunflower is on a white windowsill."
+          },
+          {
+            "id": "r6",
+            "verdict": "yes",
+            "note": "Raindrops are visible on the window glass behind the robot."
+          },
+          {
+            "id": "r7",
+            "verdict": "yes",
+            "note": "Pixar-style 3D: rounded forms, expressive eye, soft lighting, and detailed textures."
+          },
+          {
+            "id": "r8",
+            "verdict": "yes",
+            "note": "Robot is small relative to the sunflower and pot, fitting the scale."
+          }
+        ],
+        "craft": 9,
+        "aesthetics": 9,
+        "defects": [],
+        "verdict": "Excellent execution meeting all requirements with high technical and aesthetic quality.",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTQvcWxOT0lUZTBJTjdkNklvRG9XeFBpX1VFRjZhUzVPLmpwZw.140296035033d19f/qlNOITe0IN7d6IoDoWxPi_UEF6aS5O.jpg",
+        "costUsd": 0.0362,
+        "passes": 2
+      },
+      "score": {
+        "fidelity": 100,
+        "craft": 90,
+        "aesthetics": 90,
+        "quality": 96,
+        "value": 50.3,
+        "speed": 88.7,
+        "total": 86.1,
+        "grade": "A",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTQvcWxOT0lUZTBJTjdkNklvRG9XeFBpX1VFRjZhUzVPLmpwZw.140296035033d19f/qlNOITe0IN7d6IoDoWxPi_UEF6aS5O.jpg"
+    },
+    {
+      "id": "e2",
+      "model": "flux-pro",
+      "prompt": "A small green robot with one round eye watering a potted sunflower on a windowsill, rain on the glass behind it, Pixar-style 3D",
+      "status": "done",
+      "startedAt": 1790187721077,
+      "renderMs": 10797,
+      "outputUrl": "/seed-media/971d103ccb23-e2.jpg",
+      "renderCostUsd": 0.063,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "Robot is green."
+          },
+          {
+            "id": "r2",
+            "verdict": "partial",
+            "note": "Robot has two eyes, one round and one circular, not one round eye."
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "Robot is watering a sunflower."
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "Sunflower is in a pot."
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "Potted sunflower is on a windowsill."
+          },
+          {
+            "id": "r6",
+            "verdict": "yes",
+            "note": "Rain is visible on the glass behind the robot."
+          },
+          {
+            "id": "r7",
+            "verdict": "yes",
+            "note": "Image is Pixar-style 3D."
+          },
+          {
+            "id": "r8",
+            "verdict": "yes",
+            "note": "Robot is small."
+          }
+        ],
+        "craft": 9,
+        "aesthetics": 9,
+        "defects": [],
+        "verdict": "Flawless Pixar-style 3D render with accurate composition and lighting.",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTQvTUhKNVNwQWxwMUViVHl4RGlackJfXzQ0OWI5YzU2YWY5NTRlZjFiOWU1MThhYmZlZDk0ODE4LmpwZw.348564d76a0decce/MHJ5SpAlp1EbTyxDiZrB__449b9c56af954ef1b9e518abfed94818.jpg",
+        "costUsd": 0.0526,
+        "passes": 2
+      },
+      "score": {
+        "fidelity": 93.8,
+        "craft": 90,
+        "aesthetics": 90,
+        "quality": 92.3,
+        "value": 47.1,
+        "speed": 94.1,
+        "total": 83.4,
+        "grade": "A",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTQvTUhKNVNwQWxwMUViVHl4RGlackJfXzQ0OWI5YzU2YWY5NTRlZjFiOWU1MThhYmZlZDk0ODE4LmpwZw.348564d76a0decce/MHJ5SpAlp1EbTyxDiZrB__449b9c56af954ef1b9e518abfed94818.jpg"
+    },
+    {
+      "id": "e3",
+      "model": "flux-schnell",
+      "prompt": "A small green robot with one round eye watering a potted sunflower on a windowsill, rain on the glass behind it, Pixar-style 3D",
+      "status": "done",
+      "startedAt": 1790187721077,
+      "renderMs": 4070,
+      "outputUrl": "/seed-media/971d103ccb23-e3.jpg",
+      "renderCostUsd": 0.0032,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "Robot is green"
+          },
+          {
+            "id": "r2",
+            "verdict": "no",
+            "note": "Robot has two eyes, one round and one circular with a blue iris"
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "Robot is watering a sunflower"
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "Sunflower is in a pot"
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "Potted sunflower is on a windowsill"
+          },
+          {
+            "id": "r6",
+            "verdict": "yes",
+            "note": "Rain is visible on the glass behind the robot"
+          },
+          {
+            "id": "r7",
+            "verdict": "yes",
+            "note": "Image has Pixar-style 3D rendering quality"
+          },
+          {
+            "id": "r8",
+            "verdict": "yes",
+            "note": "Robot is small in scale relative to the sunflower and pot"
+          }
+        ],
+        "craft": 9,
+        "aesthetics": 9,
+        "defects": [],
+        "verdict": "Strong execution with minor eye detail discrepancy, otherwise meets all requirements with high craftsmanship and aesthetic quality",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTQvMnBUMWw0WGtzX1lsS2x1VW5IX0NhLmpwZw.adc1e52a23639ce5/2pT1l4Xks_YlKluUnH_Ca.jpg",
+        "costUsd": 0.0204,
+        "passes": 2
+      },
+      "score": {
+        "fidelity": 87.5,
+        "craft": 90,
+        "aesthetics": 90,
+        "quality": 88.5,
+        "value": 98.9,
+        "speed": 100,
+        "total": 91.7,
+        "grade": "A",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTQvMnBUMWw0WGtzX1lsS2x1VW5IX0NhLmpwZw.adc1e52a23639ce5/2pT1l4Xks_YlKluUnH_Ca.jpg"
+    }
+  ],
+  "status": "done",
+  "round": 1,
+  "sessionId": "vouch_971d103ccb23",
+  "seed": true,
+  "winnerId": "e3"
+}

@@ -1,0 +1,276 @@
+{
+  "id": "5ee7348866a0",
+  "createdAt": 1790187695119,
+  "updatedAt": 1790188210511,
+  "brief": "A red fox trotting left to right across fresh snow at dawn, breath visible, tracking shot at the fox's eye level",
+  "kind": "video",
+  "category": "nature",
+  "requirements": [
+    {
+      "id": "r1",
+      "text": "Subject is a fox"
+    },
+    {
+      "id": "r2",
+      "text": "Fox color is red"
+    },
+    {
+      "id": "r3",
+      "text": "Fox is trotting"
+    },
+    {
+      "id": "r4",
+      "text": "Fox motion is left to right"
+    },
+    {
+      "id": "r5",
+      "text": "Setting includes fresh snow"
+    },
+    {
+      "id": "r6",
+      "text": "Lighting indicates dawn"
+    },
+    {
+      "id": "r7",
+      "text": "Breath is visible"
+    },
+    {
+      "id": "r8",
+      "text": "Camera move is a tracking shot at eye level"
+    }
+  ],
+  "entries": [
+    {
+      "id": "e1",
+      "model": "kling-v3-turbo-t2v",
+      "prompt": "A red fox trotting left to right across fresh snow at dawn, breath visible, tracking shot at the fox's eye level",
+      "status": "done",
+      "startedAt": 1790187828755,
+      "renderMs": 46695,
+      "outputUrl": "/seed-media/5ee7348866a0-e1.mp4",
+      "renderCostUsd": 0.588,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "Fox is clearly visible in all frames"
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "Fox has red fur in all frames"
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "Fox is trotting in all frames, leg positions indicate motion"
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "Fox moves left to right across all frames"
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "Fresh snow covers ground in all frames"
+          },
+          {
+            "id": "r6",
+            "verdict": "yes",
+            "note": "Dawn lighting with soft light and low sun visible in background of first frame"
+          },
+          {
+            "id": "r7",
+            "verdict": "no",
+            "note": "Breath is not clearly visible in any frame"
+          },
+          {
+            "id": "r8",
+            "verdict": "yes",
+            "note": "Camera tracks fox at eye level, consistent framing across shots"
+          }
+        ],
+        "craft": 9,
+        "aesthetics": 9,
+        "defects": [],
+        "verdict": "Excellent execution with minor inconsistencies in breath visibility but otherwise flawless tracking and subject rendering.",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly83eTRmbHpwdWxndjRjbzZyLnB1YmxpYy5ibG9iLnZlcmNlbC1zdG9yYWdlLmNvbS91cGxvYWRzLzE3OTAxODc4ODE4NjktMjhkMnB5LmpwZWc.7f7b9e645b822930/1790187881869-28d2py.jpeg",
+        "costUsd": 0.0331,
+        "passes": 2
+      },
+      "score": {
+        "fidelity": 87.5,
+        "craft": 90,
+        "aesthetics": 90,
+        "quality": 88.5,
+        "value": 57.2,
+        "speed": 97,
+        "total": 83.1,
+        "grade": "A",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMjMvWFhNeTZEZHJVQTV0UGFEWEFhalVNX291dHB1dC5tcDQ.1e52468453460721/XXMy6DdrUA5tPaDXAajUM_output.mp4"
+    },
+    {
+      "id": "e2",
+      "model": "ray-32-t2v",
+      "prompt": "A red fox trotting left to right across fresh snow at dawn, breath visible, tracking shot at the fox's eye level",
+      "status": "done",
+      "startedAt": 1790187828755,
+      "renderMs": 38214,
+      "outputUrl": "/seed-media/5ee7348866a0-e2.mp4",
+      "renderCostUsd": 0.315,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "The subject is clearly a fox in all frames."
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "The fox's fur is distinctly reddish-orange, matching the 'red' description."
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "The fox's posture and leg movement in all three frames depict a trotting gait."
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "The fox is consistently moving from left to right across all frames."
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "The ground is covered in white, textured snow, indicating fresh snow."
+          },
+          {
+            "id": "r6",
+            "verdict": "partial",
+            "note": "The lighting is too flat and uniform to clearly indicate dawn; no warm hues or directional light are visible."
+          },
+          {
+            "id": "r7",
+            "verdict": "no",
+            "note": "No visible breath vapor is seen in any of the frames."
+          },
+          {
+            "id": "r8",
+            "verdict": "partial",
+            "note": "The camera angle and framing remain static relative to the fox, lacking the dynamic eye-level tracking required."
+          }
+        ],
+        "craft": 7,
+        "aesthetics": 6.5,
+        "defects": [
+          "slight motion blur on legs",
+          "inconsistent fur texture across frames",
+          "background noise/artifacts in snow",
+          "static framing contradicting tracking shot requirement"
+        ],
+        "verdict": "Partial compliance due to missing environmental and camera movement cues.",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly83eTRmbHpwdWxndjRjbzZyLnB1YmxpYy5ibG9iLnZlcmNlbC1zdG9yYWdlLmNvbS91cGxvYWRzLzE3OTAxODc4NzI5MzctNWE5NW9pLmpwZWc.a0220c0f99a4583d/1790187872937-5a95oi.jpeg",
+        "costUsd": 0.0256,
+        "passes": 2
+      },
+      "score": {
+        "fidelity": 75,
+        "craft": 70,
+        "aesthetics": 65,
+        "quality": 72.3,
+        "value": 68,
+        "speed": 100,
+        "total": 74.2,
+        "grade": "B",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMjIveXZnU1lXV1o4TG94emM3UDVRbGlUX291dHB1dC5tcDQ.71cfdbb24272d649/yvgSYWWZ8Loxzc7P5QliT_output.mp4"
+    },
+    {
+      "id": "e3",
+      "model": "minimax-h3-t2v",
+      "prompt": "A red fox trotting left to right across fresh snow at dawn, breath visible, tracking shot at the fox's eye level",
+      "status": "done",
+      "startedAt": 1790187828755,
+      "renderMs": 13805,
+      "outputUrl": "/seed-media/5ee7348866a0-e3.mp4",
+      "renderCostUsd": 0.504,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "Fox is clearly visible in all frames"
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "Fox has distinct red fur in all frames"
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "Fox is in a trotting gait, legs in motion"
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "Fox is moving left to right in all frames"
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "Fresh snow covers the ground in all frames"
+          },
+          {
+            "id": "r6",
+            "verdict": "yes",
+            "note": "Soft golden light on snow indicates dawn lighting"
+          },
+          {
+            "id": "r7",
+            "verdict": "no",
+            "note": "Breath is not visible in any frame"
+          },
+          {
+            "id": "r8",
+            "verdict": "yes",
+            "note": "Camera appears to track at eye level with fox"
+          }
+        ],
+        "craft": 5,
+        "aesthetics": 5,
+        "defects": [],
+        "verdict": "",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly83eTRmbHpwdWxndjRjbzZyLnB1YmxpYy5ibG9iLnZlcmNlbC1zdG9yYWdlLmNvbS91cGxvYWRzLzE3OTAxODc4NDk4NzIteW01ODB6LmpwZWc.daee4b29f8c740da/1790187849872-ym580z.jpeg",
+        "costUsd": 0.0259,
+        "passes": 1
+      },
+      "score": {
+        "fidelity": 87.5,
+        "craft": 50,
+        "aesthetics": 50,
+        "quality": 72.5,
+        "value": 59.9,
+        "speed": 100,
+        "total": 72.7,
+        "grade": "B",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMWYvOThrY2RKRklnOEh3VWYyREZ6MUhwX21pbmltYXgtaDMubXA0.d839f1a271b1052e/98kcdJFIg8HwUf2DFz1Hp_minimax-h3.mp4"
+    }
+  ],
+  "status": "done",
+  "round": 1,
+  "sessionId": "vouch_5ee7348866a0",
+  "seed": true,
+  "winnerId": "e1"
+}

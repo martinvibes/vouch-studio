@@ -1,0 +1,233 @@
+{
+  "id": "823ba12d0019",
+  "createdAt": 1790187695118,
+  "updatedAt": 1790188150583,
+  "brief": "Portrait of an elderly woman with silver braids playing chess in a park, her right hand lifting a black knight, shallow depth of field",
+  "kind": "image",
+  "category": "portrait",
+  "requirements": [
+    {
+      "id": "r1",
+      "text": "Subject is an elderly woman"
+    },
+    {
+      "id": "r2",
+      "text": "Woman has silver braids"
+    },
+    {
+      "id": "r3",
+      "text": "Woman is playing chess"
+    },
+    {
+      "id": "r4",
+      "text": "Setting is a park"
+    },
+    {
+      "id": "r5",
+      "text": "Woman's right hand is lifting a black knight"
+    },
+    {
+      "id": "r6",
+      "text": "Image has shallow depth of field"
+    }
+  ],
+  "entries": [
+    {
+      "id": "e1",
+      "model": "krea-2-turbo",
+      "prompt": "Portrait of an elderly woman with silver braids playing chess in a park, her right hand lifting a black knight, shallow depth of field",
+      "status": "done",
+      "startedAt": 1790187726557,
+      "renderMs": 17103,
+      "outputUrl": "/seed-media/823ba12d0019-e1.jpg",
+      "renderCostUsd": 0.0158,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "Elderly woman with deep wrinkles and aged skin clearly visible"
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "Silver braids clearly visible in her hair"
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "Woman is actively playing chess with pieces on the board"
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "Background shows green trees and grass with outdoor lighting, indicating a park setting"
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "Her right hand is clearly lifting a black knight piece"
+          },
+          {
+            "id": "r6",
+            "verdict": "yes",
+            "note": "Shallow depth of field evident with blurred background and focused subject and chessboard"
+          }
+        ],
+        "craft": 8.5,
+        "aesthetics": 9,
+        "defects": [],
+        "verdict": "Excellent execution meeting all requirements with minimal technical imperfections",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTYvNzktNGphTkpMb2w0X2dwQVQxcThkXzI0OTcyYjY5YmI5OTQwN2E4NmY1ZWNhYmMzYjY1MzZkLnBuZw.f88e187891e16810/79-4jaNJLol4_gpAT1q8d_24972b69bb99407a86f5ecabc3b6536d.png",
+        "costUsd": 0.0234,
+        "passes": 2
+      },
+      "score": {
+        "fidelity": 100,
+        "craft": 85,
+        "aesthetics": 90,
+        "quality": 94.8,
+        "value": 71.1,
+        "speed": 85.2,
+        "total": 89.1,
+        "grade": "A",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTYvNzktNGphTkpMb2w0X2dwQVQxcThkXzI0OTcyYjY5YmI5OTQwN2E4NmY1ZWNhYmMzYjY1MzZkLnBuZw.f88e187891e16810/79-4jaNJLol4_gpAT1q8d_24972b69bb99407a86f5ecabc3b6536d.png"
+    },
+    {
+      "id": "e2",
+      "model": "ideogram-v4",
+      "prompt": "Portrait of an elderly woman with silver braids playing chess in a park, her right hand lifting a black knight, shallow depth of field",
+      "status": "done",
+      "startedAt": 1790187726557,
+      "renderMs": 12073,
+      "outputUrl": "/seed-media/823ba12d0019-e2.jpg",
+      "renderCostUsd": 0.0158,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "Elderly woman with visible age and mature features"
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "Silver braids clearly visible in hair"
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "Woman is actively playing chess with pieces on board"
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "Park setting with green trees and natural light in background"
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "Right hand clearly lifting a black knight chess piece"
+          },
+          {
+            "id": "r6",
+            "verdict": "yes",
+            "note": "Shallow depth of field with blurred green background"
+          }
+        ],
+        "craft": 9,
+        "aesthetics": 9,
+        "defects": [],
+        "verdict": "Flawless execution of all brief requirements with excellent technical and aesthetic quality",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTUvQTBtTWZ3X0VOdWd4MlBqNG5pY29vX2xkdzJhT1N1LmpwZw.47ea46e2ed312029/A0mMfw_ENugx2Pj4nicoo_ldw2aOSu.jpg",
+        "costUsd": 0.0225,
+        "passes": 2
+      },
+      "score": {
+        "fidelity": 100,
+        "craft": 90,
+        "aesthetics": 90,
+        "quality": 96,
+        "value": 71.1,
+        "speed": 92,
+        "total": 90.6,
+        "grade": "A",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTUvQTBtTWZ3X0VOdWd4MlBqNG5pY29vX2xkdzJhT1N1LmpwZw.47ea46e2ed312029/A0mMfw_ENugx2Pj4nicoo_ldw2aOSu.jpg"
+    },
+    {
+      "id": "e3",
+      "model": "flux-dev",
+      "prompt": "Portrait of an elderly woman with silver braids playing chess in a park, her right hand lifting a black knight, shallow depth of field",
+      "status": "done",
+      "startedAt": 1790187726557,
+      "renderMs": 7969,
+      "outputUrl": "/seed-media/823ba12d0019-e3.jpg",
+      "renderCostUsd": 0.0263,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "elderly woman with wrinkles and mature skin visible"
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "silver braids clearly visible in hair"
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "playing chess with pieces on board"
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "green trees and grass in blurred background indicate park"
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "right hand lifting black knight piece"
+          },
+          {
+            "id": "r6",
+            "verdict": "yes",
+            "note": "sharp focus on woman and chess pieces with blurred background"
+          }
+        ],
+        "craft": 8.5,
+        "aesthetics": 8.5,
+        "defects": [],
+        "verdict": "Flawless portrait meeting all brief requirements with excellent technical and aesthetic execution.",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTQvbW9ySy1BR3R6b09BSW5LamVMOVd6LmpwZw.c6b2eadb5132b07c/morK-AGtzoOAInKjeL9Wz.jpg",
+        "costUsd": 0.0287,
+        "passes": 2
+      },
+      "score": {
+        "fidelity": 100,
+        "craft": 85,
+        "aesthetics": 85,
+        "quality": 94,
+        "value": 62.3,
+        "speed": 100,
+        "total": 88.3,
+        "grade": "A",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTQvbW9ySy1BR3R6b09BSW5LamVMOVd6LmpwZw.c6b2eadb5132b07c/morK-AGtzoOAInKjeL9Wz.jpg"
+    }
+  ],
+  "status": "done",
+  "round": 1,
+  "sessionId": "vouch_823ba12d0019",
+  "seed": true,
+  "winnerId": "e2"
+}

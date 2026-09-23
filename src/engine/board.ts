@@ -32,6 +32,8 @@ export type BoardRow = {
 
 type Acc = {
   scores: number[];
+  /** Every attempt's total, failures as 0: what you get when you call the model. */
+  outcomes: number[];
   fidelity: number[];
   quality: number[];
   ms: number[];
@@ -61,7 +63,7 @@ export function aggregate(shootouts: Shootout[]): BoardRow[] {
         model,
         kind,
         category,
-        acc: { scores: [], fidelity: [], quality: [], ms: [], cost: 0, attempts: 0, wins: 0, shootouts: 0, seals: 0 },
+        acc: { scores: [], outcomes: [], fidelity: [], quality: [], ms: [], cost: 0, attempts: 0, wins: 0, shootouts: 0, seals: 0 },
       };
       accs.set(key, v);
     }
@@ -78,6 +80,7 @@ export function aggregate(shootouts: Shootout[]): BoardRow[] {
         a.attempts++;
         a.cost += e.renderCostUsd ?? 0;
         if (headToHead) a.shootouts++;
+        a.outcomes.push(e.status === "done" && e.score ? e.score.total : 0);
         if (e.status === "done" && e.score) {
           a.scores.push(e.score.total);
           a.fidelity.push(e.score.fidelity);
@@ -94,7 +97,7 @@ export function aggregate(shootouts: Shootout[]): BoardRow[] {
 
   const rows: BoardRow[] = [...accs.values()].map(({ model, kind, category, acc }) => {
     const n = acc.scores.length;
-    const meanScore = r1(mean(acc.scores));
+    const meanScore = r1(mean(acc.outcomes));
     return {
       model,
       kind,

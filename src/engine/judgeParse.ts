@@ -32,14 +32,23 @@ export function extractJsonObject(text: string): Record<string, unknown> | null 
       if (ch === '"') inString = true;
       else if (ch === "{") depth++;
       else if (ch === "}" && --depth === 0) {
-        try {
-          const parsed = JSON.parse(text.slice(start, i + 1));
-          if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) return parsed as Record<string, unknown>;
-        } catch {
-          /* try the next opening brace */
-        }
-        break;
+        const parsed = parseLoose(text.slice(start, i + 1));
+        if (parsed) return parsed;
+        break; // try the next opening brace
       }
+    }
+  }
+  return null;
+}
+
+/** JSON.parse, then once more without trailing commas (a common small-model slip). */
+function parseLoose(candidate: string): Record<string, unknown> | null {
+  for (const attempt of [candidate, candidate.replace(/,(\s*[}\]])/g, "$1")]) {
+    try {
+      const parsed = JSON.parse(attempt);
+      if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) return parsed as Record<string, unknown>;
+    } catch {
+      /* next attempt */
     }
   }
   return null;

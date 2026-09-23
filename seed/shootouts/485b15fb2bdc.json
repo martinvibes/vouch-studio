@@ -1,0 +1,205 @@
+{
+  "id": "485b15fb2bdc",
+  "createdAt": 1790187695118,
+  "updatedAt": 1790188186377,
+  "brief": "Slow push-in on a barista pouring latte art into a white cup, steam rising, warm cafe light, the rosetta pattern forming",
+  "kind": "video",
+  "category": "action",
+  "requirements": [
+    {
+      "id": "r1",
+      "text": "A barista is present."
+    },
+    {
+      "id": "r2",
+      "text": "Latte art is poured."
+    },
+    {
+      "id": "r3",
+      "text": "A white cup is present."
+    },
+    {
+      "id": "r4",
+      "text": "Steam is rising."
+    },
+    {
+      "id": "r5",
+      "text": "Warm cafe light is present."
+    },
+    {
+      "id": "r6",
+      "text": "A rosetta pattern is forming."
+    },
+    {
+      "id": "r7",
+      "text": "The camera executes a slow push-in."
+    }
+  ],
+  "entries": [
+    {
+      "id": "e1",
+      "model": "ltx-25-t2v-fast",
+      "prompt": "Slow push-in on a barista pouring latte art into a white cup, steam rising, warm cafe light, the rosetta pattern forming",
+      "status": "done",
+      "startedAt": 1790187768518,
+      "renderMs": 28285,
+      "outputUrl": "/seed-media/485b15fb2bdc-e1.mp4",
+      "renderCostUsd": 0.567,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "Barista's hand and arm are visible pouring from a metal pitcher"
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "White milk is being poured from the pitcher into the cup to create latte art"
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "A white ceramic cup is clearly visible in all frames"
+          },
+          {
+            "id": "r4",
+            "verdict": "no",
+            "note": "No visible steam rising from the cup or pitcher in any frame"
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "Warm, golden ambient lighting is consistent across all frames, typical of a cafe environment"
+          },
+          {
+            "id": "r6",
+            "verdict": "yes",
+            "note": "A rosetta pattern is clearly forming in the final frame, with layered leaf-like designs visible in the foam"
+          },
+          {
+            "id": "r7",
+            "verdict": "yes",
+            "note": "The framing tightens progressively from left to right, indicating a slow push-in camera movement"
+          }
+        ],
+        "craft": 9,
+        "aesthetics": 9,
+        "defects": [],
+        "verdict": "Excellent execution with flawless subject consistency and professional aesthetic quality",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly83eTRmbHpwdWxndjRjbzZyLnB1YmxpYy5ibG9iLnZlcmNlbC1zdG9yYWdlLmNvbS91cGxvYWRzLzE3OTAxODc4MDE3NTAtMmQ1N3Z1LmpwZWc.fd67e18f8b8b44c7/1790187801750-2d57vu.jpeg",
+        "costUsd": 0.024,
+        "passes": 1
+      },
+      "score": {
+        "fidelity": 85.7,
+        "craft": 90,
+        "aesthetics": 90,
+        "quality": 87.4,
+        "value": 57.8,
+        "speed": 100,
+        "total": 82.7,
+        "grade": "A",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTkvb1A0LVhPTTR2d3hPSHJRdFM4THRPX3pybEtFUktLLm1wNA.8654597c7d110e87/oP4-XOM4vwxOHrQtS8LtO_zrlKERKK.mp4"
+    },
+    {
+      "id": "e2",
+      "model": "pixverse-t2v",
+      "prompt": "Slow push-in on a barista pouring latte art into a white cup, steam rising, warm cafe light, the rosetta pattern forming",
+      "status": "done",
+      "startedAt": 1790187768518,
+      "renderMs": 43080,
+      "outputUrl": "/seed-media/485b15fb2bdc-e2.mp4",
+      "renderCostUsd": 0.3413,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "Barista's hands and arms are clearly visible pouring the milk"
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "Latte art is being poured from the pitcher into the cup"
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "White cup is clearly visible in all frames"
+          },
+          {
+            "id": "r4",
+            "verdict": "no",
+            "note": "No visible steam rising from the cup"
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "Warm cafe lighting is evident in background and overall scene"
+          },
+          {
+            "id": "r6",
+            "verdict": "yes",
+            "note": "Rosetta latte art pattern is forming in the milk foam"
+          },
+          {
+            "id": "r7",
+            "verdict": "yes",
+            "note": "Camera appears relatively static with minimal push-in, not clearly slow"
+          }
+        ],
+        "craft": 8.5,
+        "aesthetics": 8,
+        "defects": [],
+        "verdict": "Good execution with minor camera movement issue",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly83eTRmbHpwdWxndjRjbzZyLnB1YmxpYy5ibG9iLnZlcmNlbC1zdG9yYWdlLmNvbS91cGxvYWRzLzE3OTAxODc4MTY4Nzctb3E4eWpkLmpwZWc.a70d4d3f3692eafa/1790187816877-oq8yjd.jpeg",
+        "costUsd": 0.0235,
+        "passes": 2
+      },
+      "score": {
+        "fidelity": 85.7,
+        "craft": 85,
+        "aesthetics": 80,
+        "quality": 84.7,
+        "value": 66.6,
+        "speed": 98.6,
+        "total": 82.5,
+        "grade": "A",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMWMvVC1rZl9naFo3Ty0wM2ZJZEJCMUFZX291dHB1dC5tcDQ.a0282bf855a363aa/T-kf_ghZ7O-03fIdBB1AY_output.mp4"
+    },
+    {
+      "id": "e3",
+      "model": "ltx-t2v",
+      "prompt": "Slow push-in on a barista pouring latte art into a white cup, steam rising, warm cafe light, the rosetta pattern forming",
+      "status": "failed",
+      "startedAt": 1790187768518,
+      "renderMs": 55592,
+      "error": "Background runner did not start within 45s (no entered_at heartbeat). Dispatch host: agent.livepeer.org. Re-run the request.",
+      "score": {
+        "fidelity": 0,
+        "craft": 0,
+        "aesthetics": 0,
+        "quality": 0,
+        "value": 0,
+        "speed": 0,
+        "total": 0,
+        "grade": "F",
+        "caps": [
+          "Render failed"
+        ]
+      }
+    }
+  ],
+  "status": "done",
+  "round": 1,
+  "sessionId": "vouch_485b15fb2bdc",
+  "seed": true,
+  "winnerId": "e1"
+}

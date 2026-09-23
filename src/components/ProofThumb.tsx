@@ -6,8 +6,8 @@ import { Media } from "./Media";
 export function ProofThumb({ href, url, kind, grade, total, caption, sub }: { href: string; url?: string; kind: "image" | "video"; grade?: string; total?: number; caption: string; sub?: string }) {
   return (
     <Link href={href} className="group block">
-      <div className={`proof-frame ${kind === "video" ? "video" : ""} rounded-[var(--radius-sm)] border border-line`}>
-        {url && <Media url={url} kind={kind} alt={caption} />}
+      <div className="proof-frame rounded-[var(--radius-sm)] border border-line">
+        {url && <Media url={url} kind={kind} alt={caption} thumb />}
         {grade && (
           <div className={`stamp ${gradeClass(grade)}`} style={{ width: 58, height: 58, right: 10, top: 10, borderWidth: 2.5 }}>
             <b style={{ fontSize: "1.4rem", marginTop: 4 }}>{grade}</b>

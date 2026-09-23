@@ -1,0 +1,271 @@
+{
+  "id": "dc9e41e7d308",
+  "createdAt": 1790187695118,
+  "updatedAt": 1790188174984,
+  "brief": "A stack of three blueberry pancakes with a pat of butter melting on top, maple syrup mid-pour, a white plate on a blue gingham tablecloth",
+  "kind": "image",
+  "category": "food",
+  "requirements": [
+    {
+      "id": "r1",
+      "text": "Three pancakes are stacked."
+    },
+    {
+      "id": "r2",
+      "text": "Pancakes are blueberry."
+    },
+    {
+      "id": "r3",
+      "text": "A pat of butter is on top of the pancakes."
+    },
+    {
+      "id": "r4",
+      "text": "Butter is melting."
+    },
+    {
+      "id": "r5",
+      "text": "Maple syrup is mid-pour."
+    },
+    {
+      "id": "r6",
+      "text": "A plate is white."
+    },
+    {
+      "id": "r7",
+      "text": "A tablecloth is blue."
+    },
+    {
+      "id": "r8",
+      "text": "A tablecloth is gingham."
+    }
+  ],
+  "entries": [
+    {
+      "id": "e1",
+      "model": "flux-dev",
+      "prompt": "A stack of three blueberry pancakes with a pat of butter melting on top, maple syrup mid-pour, a white plate on a blue gingham tablecloth",
+      "status": "done",
+      "startedAt": 1790187765161,
+      "renderMs": 5937,
+      "outputUrl": "/seed-media/dc9e41e7d308-e1.jpg",
+      "renderCostUsd": 0.0263,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "Three pancakes are clearly stacked."
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "Blueberries are visible on and around the pancakes."
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "A pat of butter is on top of the stack."
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "Butter is visibly melting with syrup pooling around it."
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "Syrup is shown mid-pour from above onto the butter."
+          },
+          {
+            "id": "r6",
+            "verdict": "yes",
+            "note": "The plate is white and clearly visible."
+          },
+          {
+            "id": "r7",
+            "verdict": "yes",
+            "note": "The tablecloth is blue."
+          },
+          {
+            "id": "r8",
+            "verdict": "yes",
+            "note": "The tablecloth is blue and white gingham pattern."
+          }
+        ],
+        "craft": 9,
+        "aesthetics": 9,
+        "defects": [],
+        "verdict": "Perfectly meets all requirements with excellent technical and aesthetic quality.",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTgvTkZWeU45MkNWVlhaRjY1NlljYnBtLmpwZw.2865cedeb064243f/NFVyN92CVVXZF656Ycbpm.jpg",
+        "costUsd": 0.0306,
+        "passes": 2
+      },
+      "score": {
+        "fidelity": 100,
+        "craft": 90,
+        "aesthetics": 90,
+        "quality": 96,
+        "value": 62.3,
+        "speed": 100,
+        "total": 89.7,
+        "grade": "A",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTgvTkZWeU45MkNWVlhaRjY1NlljYnBtLmpwZw.2865cedeb064243f/NFVyN92CVVXZF656Ycbpm.jpg"
+    },
+    {
+      "id": "e2",
+      "model": "krea-2",
+      "prompt": "A stack of three blueberry pancakes with a pat of butter melting on top, maple syrup mid-pour, a white plate on a blue gingham tablecloth",
+      "status": "done",
+      "startedAt": 1790187765161,
+      "renderMs": 16314,
+      "outputUrl": "/seed-media/dc9e41e7d308-e2.jpg",
+      "renderCostUsd": 0.0315,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "Three pancakes are clearly stacked vertically."
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "Blueberries are visible within the pancake layers."
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "A distinct pat of butter sits on top of the stack."
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "The butter shows signs of melting with syrup pooling around it."
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "Maple syrup is actively pouring from above onto the butter and pancakes."
+          },
+          {
+            "id": "r6",
+            "verdict": "yes",
+            "note": "The plate holding the pancakes is white."
+          },
+          {
+            "id": "r7",
+            "verdict": "yes",
+            "note": "The tablecloth in the background is blue."
+          },
+          {
+            "id": "r8",
+            "verdict": "yes",
+            "note": "The blue tablecloth has a clear gingham pattern."
+          }
+        ],
+        "craft": 9,
+        "aesthetics": 9,
+        "defects": [],
+        "verdict": "Perfectly executed, highly appetizing and visually polished.",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTkvVUp6LXlmSTlJRE9CcDJxMTdaTktXX2U2NmVlYzFjMzM1MDRjNzVhODMyYTRlNDBlZTk2NGI0LnBuZw.db7be67d1c7647f0/UJz-yfI9IDOBp2q17ZNKW_e66eec1c33504c75a832a4e40ee964b4.png",
+        "costUsd": 0.0355,
+        "passes": 2
+      },
+      "score": {
+        "fidelity": 100,
+        "craft": 90,
+        "aesthetics": 90,
+        "quality": 96,
+        "value": 59.2,
+        "speed": 86.1,
+        "total": 87.6,
+        "grade": "A",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTkvVUp6LXlmSTlJRE9CcDJxMTdaTktXX2U2NmVlYzFjMzM1MDRjNzVhODMyYTRlNDBlZTk2NGI0LnBuZw.db7be67d1c7647f0/UJz-yfI9IDOBp2q17ZNKW_e66eec1c33504c75a832a4e40ee964b4.png"
+    },
+    {
+      "id": "e3",
+      "model": "seedream-5-lite",
+      "prompt": "A stack of three blueberry pancakes with a pat of butter melting on top, maple syrup mid-pour, a white plate on a blue gingham tablecloth",
+      "status": "done",
+      "startedAt": 1790187765161,
+      "renderMs": 67654,
+      "outputUrl": "/seed-media/dc9e41e7d308-e3.jpg",
+      "renderCostUsd": 0.0368,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "Three pancakes are clearly stacked."
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "Blueberries are visible in the pancakes."
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "A pat of butter is on top of the pancakes."
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "Butter is melting as syrup is poured on it."
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "Maple syrup is mid-pour from above."
+          },
+          {
+            "id": "r6",
+            "verdict": "yes",
+            "note": "The plate is white."
+          },
+          {
+            "id": "r7",
+            "verdict": "yes",
+            "note": "The tablecloth is blue."
+          },
+          {
+            "id": "r8",
+            "verdict": "yes",
+            "note": "The tablecloth is blue gingham."
+          }
+        ],
+        "craft": 9.5,
+        "aesthetics": 9.5,
+        "defects": [],
+        "verdict": "Excellent, flawless execution meeting all requirements.",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMWYvLWVQS0ZudkhIaFlQWGdKMEpuS3g4XzE4MmUwNzkzMTAwMTRkOTRhMTk0MzA0Zjg5YzkwNmIzLmpwZw.f35bb69f747d5284/-ePKFnvHHhYPXgJ0JnKx8_182e079310014d94a194304f89c906b3.jpg",
+        "costUsd": 0.0784,
+        "passes": 2
+      },
+      "score": {
+        "fidelity": 100,
+        "craft": 95,
+        "aesthetics": 95,
+        "quality": 98,
+        "value": 56.5,
+        "speed": 58.3,
+        "total": 85.7,
+        "grade": "A",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMWYvLWVQS0ZudkhIaFlQWGdKMEpuS3g4XzE4MmUwNzkzMTAwMTRkOTRhMTk0MzA0Zjg5YzkwNmIzLmpwZw.f35bb69f747d5284/-ePKFnvHHhYPXgJ0JnKx8_182e079310014d94a194304f89c906b3.jpg"
+    }
+  ],
+  "status": "done",
+  "round": 1,
+  "sessionId": "vouch_dc9e41e7d308",
+  "seed": true,
+  "winnerId": "e1"
+}

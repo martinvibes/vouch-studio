@@ -1,0 +1,235 @@
+{
+  "id": "66e125652eb5",
+  "createdAt": 1790187695117,
+  "updatedAt": 1790188126516,
+  "brief": "A hand-painted shop sign reading \"FRESH BAGELS\" above a window display with exactly four sesame bagels on a wooden board, morning light",
+  "kind": "image",
+  "category": "food",
+  "requirements": [
+    {
+      "id": "r1",
+      "text": "hand-painted shop sign visible"
+    },
+    {
+      "id": "r2",
+      "text": "shop sign reads \"FRESH BAGELS\""
+    },
+    {
+      "id": "r3",
+      "text": "window display visible"
+    },
+    {
+      "id": "r4",
+      "text": "exactly four sesame bagels"
+    },
+    {
+      "id": "r5",
+      "text": "bagels on a wooden board"
+    },
+    {
+      "id": "r6",
+      "text": "morning light present"
+    }
+  ],
+  "entries": [
+    {
+      "id": "e1",
+      "model": "flux-schnell",
+      "prompt": "A hand-painted shop sign reading \"FRESH BAGELS\" above a window display with exactly four sesame bagels on a wooden board, morning light",
+      "status": "done",
+      "startedAt": 1790187699233,
+      "renderMs": 11869,
+      "outputUrl": "/seed-media/66e125652eb5-e1.jpg",
+      "renderCostUsd": 0.0032,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "hand-painted chalkboard sign with wooden frame is clearly visible"
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "text reads \"FRESH BAGELS\" in white hand-painted letters"
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "window display with glass panes and wooden frame is clearly visible"
+          },
+          {
+            "id": "r4",
+            "verdict": "no",
+            "note": "only three sesame bagels are visible, not four"
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "three bagels are on a light-colored wooden board"
+          },
+          {
+            "id": "r6",
+            "verdict": "yes",
+            "note": "strong directional morning light creates bright highlights and long shadows"
+          }
+        ],
+        "craft": 6,
+        "aesthetics": 7.5,
+        "defects": [
+          "incorrect number of bagels"
+        ],
+        "verdict": "The image satisfies most requirements but fails on the critical count of bagels, with otherwise strong lighting and composition.",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTIvbVF4N05WeFJYTk05RVh5VGhwMjBvLmpwZw.d39e98eeebbcca0e/mQx7NVxRXNM9EXyThp20o.jpg",
+        "costUsd": 0.0195,
+        "passes": 2
+      },
+      "score": {
+        "fidelity": 83.3,
+        "craft": 60,
+        "aesthetics": 75,
+        "quality": 76.2,
+        "value": 98.9,
+        "speed": 92.3,
+        "total": 82.4,
+        "grade": "A",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTIvbVF4N05WeFJYTk05RVh5VGhwMjBvLmpwZw.d39e98eeebbcca0e/mQx7NVxRXNM9EXyThp20o.jpg"
+    },
+    {
+      "id": "e2",
+      "model": "gemini-image",
+      "prompt": "A hand-painted shop sign reading \"FRESH BAGELS\" above a window display with exactly four sesame bagels on a wooden board, morning light",
+      "status": "done",
+      "startedAt": 1790187699233,
+      "renderMs": 8723,
+      "outputUrl": "/seed-media/66e125652eb5-e2.jpg",
+      "renderCostUsd": 0.0041,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "hand-painted wooden sign visible"
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "sign reads \"FRESH BAGELS\" exactly"
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "window display with glass and shelf visible"
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "exactly four sesame bagels on board"
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "bagels on round wooden board"
+          },
+          {
+            "id": "r6",
+            "verdict": "yes",
+            "note": "morning light casting shadows and highlights"
+          }
+        ],
+        "craft": 9,
+        "aesthetics": 9,
+        "defects": [],
+        "verdict": "Excellent execution meeting all requirements with flawless craftsmanship and professional lighting.",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTIvZVJZME5JMFlPektEQU5TYjAwWUkwX0lUU0cyR3ozLnBuZw.4a3fd3fa29bdbe95/eRY0NI0YOzKDANSb00YI0_ITSG2Gz3.png",
+        "costUsd": 0.0334,
+        "passes": 2
+      },
+      "score": {
+        "fidelity": 100,
+        "craft": 90,
+        "aesthetics": 90,
+        "quality": 96,
+        "value": 94.6,
+        "speed": 98.3,
+        "total": 95.9,
+        "grade": "S",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTIvZVJZME5JMFlPektEQU5TYjAwWUkwX0lUU0cyR3ozLnBuZw.4a3fd3fa29bdbe95/eRY0NI0YOzKDANSb00YI0_ITSG2Gz3.png"
+    },
+    {
+      "id": "e3",
+      "model": "krea-2-turbo",
+      "prompt": "A hand-painted shop sign reading \"FRESH BAGELS\" above a window display with exactly four sesame bagels on a wooden board, morning light",
+      "status": "done",
+      "startedAt": 1790187699233,
+      "renderMs": 12939,
+      "outputUrl": "/seed-media/66e125652eb5-e3.jpg",
+      "renderCostUsd": 0.0158,
+      "judge": {
+        "checks": [
+          {
+            "id": "r1",
+            "verdict": "yes",
+            "note": "hand-painted wooden sign visible"
+          },
+          {
+            "id": "r2",
+            "verdict": "yes",
+            "note": "sign reads \"FRESH BAGELS\" exactly"
+          },
+          {
+            "id": "r3",
+            "verdict": "yes",
+            "note": "window display with bagels visible"
+          },
+          {
+            "id": "r4",
+            "verdict": "yes",
+            "note": "exactly four sesame bagels on board"
+          },
+          {
+            "id": "r5",
+            "verdict": "yes",
+            "note": "bagels placed on wooden board"
+          },
+          {
+            "id": "r6",
+            "verdict": "yes",
+            "note": "morning light casting shadows on board and wall"
+          }
+        ],
+        "craft": 9,
+        "aesthetics": 9,
+        "defects": [],
+        "verdict": "Flawless execution of all brief requirements with perfect lighting and composition.",
+        "judgeModel": "nemotron-omni-vision",
+        "judgedUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTMvQk5IWW9aM0VQYlFCWkRIV0dnd0dFX2JmNzA4ZmVlYWMyMTRhYWU5MWY5OTc0MWNlMjRlZDc2LnBuZw.db92dc2da8d92f08/BNHYoZ3EPbQBZDHWGgwGE_bf708feeac214aae91f99741ce24ed76.png",
+        "costUsd": 0.022,
+        "passes": 2
+      },
+      "score": {
+        "fidelity": 100,
+        "craft": 90,
+        "aesthetics": 90,
+        "quality": 96,
+        "value": 71.1,
+        "speed": 90.6,
+        "total": 90.5,
+        "grade": "A",
+        "caps": []
+      },
+      "originalUrl": "https://agent.livepeer.org/a/aHR0cHM6Ly92M2IuZmFsLm1lZGlhL2ZpbGVzL2IvMGFhYjljMTMvQk5IWW9aM0VQYlFCWkRIV0dnd0dFX2JmNzA4ZmVlYWMyMTRhYWU5MWY5OTc0MWNlMjRlZDc2LnBuZw.db92dc2da8d92f08/BNHYoZ3EPbQBZDHWGgwGE_bf708feeac214aae91f99741ce24ed76.png"
+    }
+  ],
+  "status": "done",
+  "round": 1,
+  "sessionId": "vouch_66e125652eb5",
+  "seed": true,
+  "winnerId": "e2"
+}

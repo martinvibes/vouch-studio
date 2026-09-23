@@ -97,3 +97,15 @@ describe("judgeHumanAgreement", () => {
     expect(judgeHumanAgreement([a, b, c])).toEqual({ picks: 2, agree: 1, rate: 0.5 });
   });
 });
+
+describe("reliability", () => {
+  it("counts a failed render as 0 in the Vouch score but keeps quality over graded renders", () => {
+    const rows = aggregate([shootout([entry("ltx-t2v", 88), entry("pixverse-t2v", 80)]), shootout([entry("ltx-t2v", null), entry("pixverse-t2v", 82)])]);
+    const ltx = rows.find((r) => r.model === "ltx-t2v" && r.category === "all")!;
+    expect(ltx.meanScore).toBe(44);
+    expect(ltx.meanQuality).toBe(88);
+    expect(ltx.n).toBe(1);
+    expect(ltx.successRate).toBe(0.5);
+    expect(rows.filter((r) => r.category === "all")[0].model).toBe("pixverse-t2v");
+  });
+});
