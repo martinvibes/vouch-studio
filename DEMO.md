@@ -1,30 +1,14 @@
-# Demo video script (about 2.5 minutes)
+# Demo video script (1:45)
 
-Record at 1440×900, light theme. Start a shootout before recording one so you have a finished one to cut to if the live one runs long.
+Record at 1440×900 in the light theme. Before you hit record, start one image shootout so a finished result is ready to cut to.
 
-**0:00 · The problem (Studio page)**
-"Livepeer gives you dozens of image and video models behind one API. Which one should render *this* shot? Prices differ twenty-fold and vendor samples are cherry-picked. Vouch Studio answers with evidence."
-
-**0:15 · Plan (click the "Bakery sign" example)**
-"I describe the shot: a sign reading FRESH BAGELS above exactly four bagels. Vouch reads it as a typography brief and proposes a lineup from its Board: the best model for this kind of shot, the best value, and a challenger it hasn't tested much. Each card shows the live Livepeer price, network latency and success rate. I can swap any of them."
-
-**0:35 · Run (click Run the shootout)**
-"Three models render in parallel on Livepeer. Meanwhile a text model on Livepeer has turned my brief into a checklist: the exact words, the count of four, the lighting."
-
-**0:55 · Verdict (stamps land)**
-"As each render lands, a vision model on Livepeer grades it blind, without knowing which model made it. Green ticks are met; here it counted only two bagels, so that requirement fails and the score drops. Craft, aesthetics, cost and speed roll into one Vouch score. The winner gets the seal."
-
-**1:20 · Human in the loop**
-"I can disagree: 'I prefer this one' records my pick next to the judge's, and the Board publishes how often people agree with the judge."
-
-**1:30 · Refine (Refine this render → type feedback → Run round 2)**
-"I want the lettering in gold. Vouch turns my feedback into new checklist items, rewrites the prompt, and runs round two on the same model. The trail at the top shows the score change round over round."
-
-**1:55 · The Board (open /board, click Typography, then a model)**
-"Every shootout feeds the Board: models ranked by graded renders, overall and per kind of shot, with cost per usable render, latency and win rate. Nothing here is self-reported."
-
-**2:15 · For agents (open /api-docs)**
-"And it's an API. Another agent can ask 'what's the best typography model under two cents?' before spending anything, or run a shootout and read the verdict as JSON."
-
-**2:25 · Close**
-"Vouch Studio: every render and every verdict runs on Livepeer. Pick the right model for every shot."
+| Time | On screen | What you say |
+| --- | --- | --- |
+| 0:00–0:12 | **Studio home page.** Slowly scroll past "Recent verdicts". | "Livepeer gives you dozens of AI image and video models. But which one should render *your* shot? Prices vary twentyfold, and samples are cherry-picked. Vouch Studio answers that with evidence." |
+| 0:12–0:27 | **Click the "Bakery sign" example.** The lineup cards appear. | "I describe the shot: a sign reading FRESH BAGELS, with exactly four bagels. Vouch picks three models: the best for this kind of shot, the best value, and a challenger. Each card shows the live Livepeer price, speed and success rate." |
+| 0:27–0:37 | **Click "Run the shootout".** The Arena opens and the renders load. | "All three render at the same time on Livepeer. Meanwhile, a text model turns my brief into a checklist: the exact words, the count of four, the lighting." |
+| 0:37–0:57 | **Grade stamps land on the renders.** Point at a green tick, then a red cross, then the seal. | "As each render lands, a vision model grades it blind. It doesn't know which model made it. Green means met. Here, one model drew only two bagels, so it loses points. Quality, cost and speed become one score, and the winner gets the Vouch seal." |
+| 0:57–1:07 | **Click "I prefer this one"** on a different render. | "I can disagree with the judge. My pick is saved, and the Board shows how often people agree with it." |
+| 1:07–1:20 | **Click "Refine this render"**, type *"make the lettering gold"*, then **click "Run round 2"**. | "Want changes? I give feedback. Vouch turns it into new checklist items, rewrites the prompt and runs round two on the same model. The trail at the top shows the score change." |
+| 1:20–1:35 | **Open the Board**, click **Typography**, then click a model name. | "Every shootout feeds the Board: models ranked by real, graded renders, with cost per usable render, speed and win rate. Nothing here is self-reported." |
+| 1:35–1:45 | **Open the API page.** End on the recommend example. | "And agents can use it too. Ask which model is best under a budget before spending anything. Vouch Studio: the right model for every shot, proven on Livepeer." |
