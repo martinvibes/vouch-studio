@@ -3,7 +3,10 @@
 > Find the right AI model for every shot. Describe it once, watch three models compete on the Livepeer network, and get a blind, evidence-backed verdict.
 
 **Live app:** https://web-production-e90e7.up.railway.app
+**Demo video:** https://youtu.be/4f9GRww1_uI
 **Hackathon:** Atumera Livepeer Agent Hackathon, Track 01 (Livepeer Agent Builder)
+
+[![Watch the Vouch Studio demo](https://img.youtube.com/vi/4f9GRww1_uI/hqdefault.jpg)](https://youtu.be/4f9GRww1_uI)
 
 ---
 
