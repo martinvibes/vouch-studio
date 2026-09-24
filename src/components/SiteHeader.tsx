@@ -17,11 +17,11 @@ export function SiteHeader() {
             <circle cx="16" cy="16" r="14.5" fill="var(--gold)" stroke="var(--hard)" strokeWidth="1.5" />
             <path d="M9.5 16.5l4.2 4.2 8.8-9.4" fill="none" stroke="var(--on-gold)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
-          <span className="whitespace-nowrap">Vouch<span className="text-soft font-medium"> Studio</span></span>
+          <span className="whitespace-nowrap">Vouch<span className="text-soft font-medium hidden sm:inline"> Studio</span></span>
         </Link>
         <nav className="flex items-center gap-0.5 sm:gap-1 min-w-0 overflow-x-auto" aria-label="Main">
           {NAV.map((n) => (
-            <Link key={n.href} href={n.href} className="nav-link">
+            <Link key={n.href} href={n.href} className={`nav-link ${n.href === "/" ? "hidden sm:inline-flex" : ""}`}>
               {n.label}
             </Link>
           ))}

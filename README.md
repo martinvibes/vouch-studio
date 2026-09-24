@@ -18,6 +18,7 @@
 - [Tech stack](#tech-stack)
 - [Getting started](#getting-started)
 - [Configuration](#configuration)
+- [Use it from an agent (MCP)](#use-it-from-an-agent-mcp)
 - [API reference](#api-reference)
 - [Project structure](#project-structure)
 - [Deployment](#deployment)
@@ -58,6 +59,7 @@ Every result also feeds **the Board**, a public ranking of models built only fro
 | **Refine rounds** | Give feedback on a render. Your feedback becomes new checklist items, the prompt is rewritten, and the next round shows the score change. |
 | **Human override** | Pick a different winner than the judge. The Board reports how often people agree with the judge. |
 | **The Board** | Models ranked by score, quality, cost per usable render, speed, win rate and reliability, overall and per kind of shot. |
+| **MCP server** | Claude, Cursor or any MCP client can ask which model to use, run shootouts, refine renders and read the Board. |
 | **Agent API** | Ask which model to use under a budget, or run a shootout and read the verdict as JSON. |
 
 ## How it works
@@ -149,6 +151,44 @@ Set these in `.env.local`, or in your host's environment.
 | `SHOOTOUTS_PER_IP_PER_HOUR` | `6` | Shootouts allowed per visitor per hour |
 | `MAX_CONCURRENT_SHOOTOUTS` | `2` | Shootouts that run at once; extra ones wait in a queue |
 
+## Use it from an agent (MCP)
+
+Vouch Studio is an MCP server (Streamable HTTP, stateless, no key needed):
+
+```
+https://web-production-e90e7.up.railway.app/api/mcp
+```
+
+**Claude Code**
+
+```bash
+claude mcp add --transport http vouch-studio https://web-production-e90e7.up.railway.app/api/mcp
+```
+
+**Cursor** (`.cursor/mcp.json`)
+
+```json
+{ "mcpServers": { "vouch-studio": { "url": "https://web-production-e90e7.up.railway.app/api/mcp" } } }
+```
+
+**Claude Desktop** (`claude_desktop_config.json`)
+
+```json
+{ "mcpServers": { "vouch-studio": { "command": "npx", "args": ["-y", "mcp-remote", "https://web-production-e90e7.up.railway.app/api/mcp"] } } }
+```
+
+| Tool | What it does | Cost |
+| --- | --- | --- |
+| `recommend_model` | Best model for a kind of shot under a budget, from graded renders | Free |
+| `plan_shootout` | Classify a brief and propose three models with live prices | Free |
+| `run_shootout` | Render a brief on up to three models, judge blind, return the verdict | Spends credit |
+| `get_shootout` | Read a shootout's status and verdict | Free |
+| `refine_render` | Start a new round on one render with feedback | Spends credit |
+| `get_board` | The model ranking, by media type and kind of shot | Free |
+| `list_models` | Every model in the field with its price | Free |
+
+`run_shootout` waits for the verdict (about 30 seconds for images) and returns the winner, each render's grade, the checks it missed, its flaws, cost and a link to the result page. Video returns straight away with an `id` to poll with `get_shootout`.
+
 ## API reference
 
 No key is required. Shootouts count against the per-visitor rate limit and the daily spending limit.
@@ -185,7 +225,7 @@ curl https://web-production-e90e7.up.railway.app/api/shootouts/<id>
 
 ```
 src/
-├── app/            Pages (Studio, Arena, Board, model pages, methodology, API docs) and API routes
+├── app/            Pages (Studio, Arena, Board, model pages, docs, methodology, API docs), API routes and the MCP endpoint
 ├── components/     UI components (composer, arena, grade stamp, seal, theme toggle)
 ├── engine/         Core logic: contenders, checklist, judge, video frames, scoring,
 │                   Board, lineup router, shootout runner, refine, rate and spend limits
@@ -212,7 +252,7 @@ The seed benchmark ships with the repo, so the Board is populated on first boot.
 ## Testing
 
 ```bash
-pnpm test        # 52 unit tests, including the full shootout flow against fake Livepeer responses
+pnpm test        # 57 unit tests, including the full shootout flow against fake Livepeer responses
 pnpm typecheck   # TypeScript checks
 pnpm benchmark   # Re-run the seed benchmark on Livepeer (real renders, about $7)
 ```

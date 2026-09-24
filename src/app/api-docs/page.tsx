@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { headers } from "next/headers";
 
 export const metadata = { title: "API · Vouch Studio" };
@@ -70,6 +71,10 @@ export default async function ApiDocs() {
       <p className="mt-5 text-lg text-soft max-w-2xl leading-relaxed">
         Everything the Studio does is a JSON call, so another agent can ask Vouch which model to use before it spends anything, or run a
         shootout and read the verdict. No key needed. Shootouts are rate-limited per caller and share a daily spend ceiling.
+      </p>
+      <p className="mt-4 text-soft">
+        Using Claude, Cursor or another MCP client? Connect to <code className="inline">{base}/api/mcp</code> instead.{" "}
+        <Link href="/docs#mcp" className="font-semibold text-gold underline underline-offset-4">Setup guide</Link>
       </p>
       <div className="mt-10 grid gap-10">
         {endpoints(base).map((e) => (
