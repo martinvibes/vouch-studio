@@ -292,3 +292,23 @@
   .seg .seg-link { display: inline-flex; align-items: center; height: 34px; padding: 0 14px; border-radius: 9px; font-weight: 600; font-size: .88rem; color: var(--ink-soft); }
   .seg .seg-link[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
 }
+
+@layer components {
+  .docs .lead { margin-top: 1rem; font-size: 1.15rem; color: var(--ink-soft); line-height: 1.6; }
+  .docs section { padding-top: 1.5rem; margin-top: 1.5rem; border-top: 1px solid var(--line); scroll-margin-top: 90px; }
+  .docs h2 { font-size: 1.45rem; margin-bottom: .75rem; }
+  .docs h3 { font-size: 1.05rem; margin-top: 1.75rem; font-family: var(--font-sans); font-weight: 700; }
+  .docs p, .docs li, .docs dd { color: var(--ink-soft); line-height: 1.7; }
+  .docs p { margin: .75rem 0; }
+  .docs strong { color: var(--ink); }
+  .docs a { color: var(--gold-3); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+  .docs ul { list-style: disc; padding-left: 1.25rem; margin: .75rem 0; display: grid; gap: .35rem; }
+  .docs .steps { counter-reset: step; list-style: none; padding: 0; margin: 1rem 0; display: grid; gap: .75rem; }
+  .docs .steps li { counter-increment: step; position: relative; padding-left: 2.5rem; }
+  .docs .steps li::before { content: counter(step); position: absolute; left: 0; top: .1rem; width: 1.7rem; height: 1.7rem; border-radius: 999px; display: grid; place-items: center; font-size: .8rem; font-weight: 700; background: var(--gold); color: var(--on-gold); border: 1.5px solid var(--hard); }
+  .docs .note { background: var(--surface-2); border: 1px solid var(--line); border-left: 3px solid var(--gold); border-radius: 10px; padding: .8rem 1rem; }
+  .docs .defs { display: grid; grid-template-columns: minmax(8rem, max-content) 1fr; gap: .6rem 1.25rem; margin-top: 1rem; }
+  .docs .defs dt { font-weight: 700; color: var(--ink); }
+  .docs .defs dd { margin: 0; }
+  @media (max-width: 640px) { .docs .defs { grid-template-columns: 1fr; gap: .2rem; } .docs .defs dd { margin-bottom: .6rem; } }
+}
